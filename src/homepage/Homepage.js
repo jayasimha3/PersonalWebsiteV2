@@ -11,7 +11,7 @@ function HomepageImage() {
 
 function HomepageBody() {
     return (
-      <div class="container-xl" flex>
+      <div class="container-xl bg-{ mode }" flex>
           <main role="main" class="inner cover">
             <div class="card mb-3 main-card border-0" >
               <div class="d-flex flex-wrap no-gutters">
