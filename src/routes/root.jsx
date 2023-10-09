@@ -1,4 +1,4 @@
-import { Navbar } from '../common/Navbar.js';
+import { Navbar, Footer } from '../common/Navbar.js';
 import { HomepageBody } from '../homepage/Homepage.js'
 
 export default function Root() {
@@ -6,6 +6,7 @@ export default function Root() {
       <>
         <Navbar></Navbar>
         <HomepageBody></HomepageBody>
+        <Footer></Footer>
       </>
     );
   }

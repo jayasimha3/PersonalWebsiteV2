@@ -3,4 +3,4 @@ const rishee = {
     currentWork: "Software Developer"
 }
 
-export { rishee};
+export { rishee };
