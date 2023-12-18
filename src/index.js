@@ -39,6 +39,7 @@ import './index.css';
 import Root from './routes/root.jsx';
 import { EmploymentBody } from './employment/Employment.js';
 import { ProjectsBody } from './projects/Projects.jsx';
+import { ExtracurricularBody } from './extracurricular/Extracurricular.jsx';
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: <ProjectsBody />
+  },
+  {
+    path: "/extracurricular",
+    element: <ExtracurricularBody />
   }
 ]);
 
