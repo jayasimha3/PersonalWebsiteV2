@@ -11,7 +11,7 @@ function EmploymentBody() {
       <div class="container-xl" flex>
         <div class="jumbotron mb-3">
           <div class="media">
-              <img src="/assets/gm/gm.jpg" class="mr-3" alt="General Motors"></img>
+              <img src="../static/gm/gm.jpg" class="mr-3" alt="General Motors"></img>
                   <div class="media-body">
                       <h1 class="lead text-break">
                           Entry Level Software Developer <span class="badge badge-primary float-right">Current</span>
@@ -60,7 +60,7 @@ function EmploymentBody() {
       <div class="card border-light mb-3" style={{styles}}>
           <div class="card-body text-dark">
               <div class="media">
-                  <img src="/assets/ohiostate/blockO.png" class="mr-3" alt="The Ohio State University"></img>
+                  <img src="../static/ohiostate/blockO.png" class="mr-3" alt="The Ohio State University"></img>
                       <div class="media-body">
                           <h6 class="text-break">
                               Software 2 Grader
@@ -83,7 +83,7 @@ function EmploymentBody() {
       <div class="card border-light mb-3" style={{styles}}>
               <div class="card-body text-dark">
                   <div class="media">
-                      <img src="/assets/ohiostate/blockO.png" class="mr-3" alt="The Ohio State University"></img>
+                      <img src="../static/ohiostate/blockO.png" class="mr-3" alt="The Ohio State University"></img>
                           <div class="media-body">
                               <h6 class="text-break">
                                   Office Assistant
@@ -104,7 +104,7 @@ function EmploymentBody() {
       <div class="card border-light mb-3" style={{styles}}>
               <div class="card-body text-dark">
                   <div class="media">
-                      <img src="/assets/slu/stlouisuniv.png" class="mr-3" alt="Saint Louis University"></img>
+                      <img src="../static/slu/stlouisuniv.png" class="mr-3" alt="Saint Louis University"></img>
                           <div class="media-body">
                               <h6 class="text-break">
                                   Intern

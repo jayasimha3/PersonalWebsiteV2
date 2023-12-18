@@ -17,7 +17,7 @@ function ProjectsBody() {
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/assets/projects/Website.png" class="d-block w-25 float-right" alt="Website"></img>
+                    <img src="../static/projects/Website.png" class="d-block w-25 float-right" alt="Website"></img>
                     <div class="carousel-caption d-none d-md-block text-left">
                         <h5 class="text-break text-muted">WEBSITE</h5>
                         <p class="text-break text-muted">INFO HERE</p>
@@ -27,7 +27,7 @@ function ProjectsBody() {
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/assets/projects/KitchenAssitant.png" class="d-block w-25 float-right" alt="Kitchen Assitant"></img>
+                    <img src="../static/projects/KitchenAssitant.png" class="d-block w-25 float-right" alt="Kitchen Assitant"></img>
                     <div class="carousel-caption d-none d-md-block text-left">
                         <h5 class="text-break text-muted">Capstone Project: Kitchen Assistant</h5>
                         <p class="text-break text-muted">
@@ -39,7 +39,7 @@ function ProjectsBody() {
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/assets/projects/MLProject.png" class="d-block w-25 float-right" alt="ML Project"></img>
+                    <img src="../static/projects/MLProject.png" class="d-block w-25 float-right" alt="ML Project"></img>
                     <div class="carousel-caption d-none d-md-block text-left">
                         <h5 class="text-break text-muted">College Football Rankings Using Machine Learning</h5>
                         <p class="text-break text-muted">
@@ -90,7 +90,7 @@ function ProjectsBody() {
                     <br></br>
                     For more information, feel free to see the README below, or contact me. The project recieved a 97.5% upon completion in April.
                 </p>
-                <a href="./assets/projects/KitchenAssistantReadme.md">
+                <a href=".../static/projects/KitchenAssistantReadme.md">
                     <button type="button" class="btn btn-outline-secondary btn-sm"> See Readme </button>
                 </a>
             </div>
@@ -114,7 +114,7 @@ function ProjectsBody() {
                     The project cannot be extrapolited to the real-world due to some limitations I defined when doing the project. You can learn more 
                     by looking at the report below, or contacting me. The project recieved an A upon submission of the report.
                 </p>
-                <a href="./assets/projects/FinalReport_MLProject.pdf">
+                <a href=".../static/projects/FinalReport_MLProject.pdf">
                     <button type="button" class="btn btn-outline-secondary btn-sm"> See Report </button>
                 </a>
             </div>
