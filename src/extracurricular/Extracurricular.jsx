@@ -12,7 +12,7 @@ function ExtracurricularBody() {
         <div class="card border-light mb-3" style={{styles}}>
             <div class="card-body text-dark">
                 <div class="media">
-                    <img src="/assets/extracurricular/lab6_maze.png" class="mr-3" alt="Maze"></img>
+                    <img src="../static/extracurricular/lab6_maze.png" class="mr-3" alt="Maze"></img>
                         <div class="media-body">
                             <h6 class="text-break">
                                 Game Design
@@ -33,7 +33,7 @@ function ExtracurricularBody() {
         <div class="card border-light mb-3" style={{styles}}>
             <div class="card-body text-dark">
                 <div class="media">
-                    <img src="/assets/extracurricular/trumpet.svg" class="mr-3" width="100" height="100" alt="Trumpet"></img>
+                    <img src="../static/extracurricular/trumpet.svg" class="mr-3" width="100" height="100" alt="Trumpet"></img>
                         <div class="media-body">
                             <h6 class="text-break">
                                 Music
@@ -53,7 +53,7 @@ function ExtracurricularBody() {
         <div class="card border-light mb-3" style={{styles}}>
             <div class="card-body text-dark">
                 <div class="media">
-                    <img src="/assets/extracurricular/computer.jpg" class="mr-3" alt="Computer"></img>
+                    <img src="../static/extracurricular/computer.jpg" class="mr-3" alt="Computer"></img>
                         <div class="media-body">
                             <h6 class="text-break">
                                 Building Computers
@@ -75,7 +75,7 @@ function ExtracurricularBody() {
         <div class="card border-light mb-3" style={{styles}}>
             <div class="card-body text-dark">
                 <div class="media">
-                    <img src="/assets/extracurricular/robot.svg" class="mr-3" width="100" height="100" alt="AI"></img>
+                    <img src="../static/extracurricular/robot.svg" class="mr-3" width="100" height="100" alt="AI"></img>
                         <div class="media-body">
                             <h6 class="text-break">
                                 Artificial Intelligence
@@ -93,7 +93,7 @@ function ExtracurricularBody() {
         <div class="card border-light mb-3" style={{styles}}>
             <div class="card-body text-dark">
                 <div class="media">
-                    <img src="/assets/extracurricular/ps4_die.jpg" class="mr-3" width="100" height="100" alt="AI"></img>
+                    <img src="../static/extracurricular/ps4_die.jpg" class="mr-3" width="100" height="100" alt="AI"></img>
                         <div class="media-body">
                             <h6 class="text-break">
                                 Computer Architecture
@@ -114,7 +114,7 @@ function ExtracurricularBody() {
         <div class="card border-light mb-3" style={{styles}}>
             <div class="card-body text-dark">
                 <div class="media">
-                    <img src="/assets/extracurricular/tennisracquet.svg" class="mr-3" width="100" height="100" alt="Tennis"></img>
+                    <img src="../static/extracurricular/tennisracquet.svg" class="mr-3" width="100" height="100" alt="Tennis"></img>
                         <div class="media-body">
                             <h6 class="text-break">
                                 Tennis
@@ -133,7 +133,7 @@ function ExtracurricularBody() {
         <div class="card border-light mb-3" style={{styles}}>
             <div class="card-body text-dark">
                 <div class="media">
-                    <img src="/assets/extracurricular/boardgame.svg" class="mr-3" width="100" height="100" alt="Tennis"></img>
+                    <img src="../static/extracurricular/boardgame.svg" class="mr-3" width="100" height="100" alt="Tennis"></img>
                         <div class="media-body">
                             <h6 class="text-break">
                                 Board Games
