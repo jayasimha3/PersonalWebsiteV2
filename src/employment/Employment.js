@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import me from '../static/img/homepage/jayasimharishee.jpg';
 import { rishee } from '../common/Constants.js';
-import { Navbar } from '../common/Navbar.js';
+import { Navbar, Footer } from '../common/Navbar.js';
 
 function EmploymentBody() {
     return (
@@ -125,6 +125,7 @@ function EmploymentBody() {
               </div>
           </div>
         </div>
+      <Footer></Footer>
       </>
     )
   }
