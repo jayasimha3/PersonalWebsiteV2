@@ -36,10 +36,10 @@ import {
 import './index.css';
 
 // Internal Dependencies
-import Root from './routes/root.jsx';
-import { EmploymentBody } from './employment/Employment.js';
-import { ProjectsBody } from './projects/Projects.jsx';
-import { ExtracurricularBody } from './extracurricular/Extracurricular.jsx';
+import Root from './routes/root.tsx';
+import { EmploymentBody } from './employment/Employment.tsx';
+import { ProjectsBody } from './projects/Projects.tsx';
+import { ExtracurricularBody } from './extracurricular/Extracurricular.tsx';
 
 const router = createBrowserRouter([
   {
