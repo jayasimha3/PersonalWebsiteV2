@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 
 import me from '../static/img/homepage/jayasimharishee.jpg';
-import { rishee } from '../common/Constants.js';
+import { rishee } from '../common/Constants.tsx';
 
 function HomepageImage() {
     return (
