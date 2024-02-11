@@ -3,4 +3,8 @@ const rishee = {
     currentWork: "Software Developer"
 }
 
-export { rishee };
+const styles: React.CSSProperties = {
+    maxWidth: "100%"
+};
+
+export { rishee, styles };

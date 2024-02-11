@@ -1,0 +1,25 @@
+name: CI - Build Validation
+
+on:
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: git.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout Main
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+      - name: Install Packages
+        run: npm install
+      - name: Build Application
+        run: npm run build
+      - name: Save Build
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build
