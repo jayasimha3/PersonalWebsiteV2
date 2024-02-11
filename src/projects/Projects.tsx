@@ -151,9 +151,7 @@ function ProjectsBody() {
                     include the number of an item, names, patrons, whether something has been checked-out or not, and the items patrons checked-out (listed under 
                     the patron). The project recieved an A upon submission of a report.
                 </p>
-                <a>
-                    <button type="button" className="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#Contact"> Contact Me to See Report </button>
-                </a>
+                <button type="button" className="btn btn-outline-secondary" disabled>Contact Me to See Report</button>
             </div>
         </div>
 
@@ -197,9 +195,7 @@ function ProjectsBody() {
                     As the primary designer, I designed a nozzle that incorporated spatula tips on the nozzle to unifomally apply caulk, using SOLIDWORKS. 
                     While untested, it received interest for real-world application upon presenting it to FORJAK.
                 </p>
-                <a>
-                    <button type="button" className="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#Contact"> Contact Me to See White Paper </button>
-                </a>
+                <button type="button" className="btn btn-outline-secondary" disabled>Contact Me to See White Paper</button>
             </div>
         </div>
 
@@ -217,9 +213,7 @@ function ProjectsBody() {
                     autonomous vehicle pre-programed to run to the end of a ceiling track, collect payload, and go back to start. The design was our own, 
                     with matrials given to us by the instructor. I developed all code using Arduino.
                 </p>
-                <a>
-                    <button type="button" className="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#Contact"> Contact Me to See Report </button>
-                </a>
+                <button type="button" className="btn btn-outline-secondary" disabled>Contact Me to See Report</button>
             </div>
         </div>
 
@@ -236,9 +230,7 @@ function ProjectsBody() {
                     Given a trainset, my team of 4 programmed a train to move in a circle while stopping at a train station 
                     and implement safety features for the track. All code was done in MATLAB.
                 </p>
-                <a>
-                    <button type="button" className="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#Contact"> Contact Me to See Report </button>
-                </a>
+                <button type="button" className="btn btn-outline-secondary" disabled>Contact Me to See Report</button>
             </div>
         </div>
 
