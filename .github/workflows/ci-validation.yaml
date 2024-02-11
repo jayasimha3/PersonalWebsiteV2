@@ -1,0 +1,31 @@
+name: CI - Build Validation
+
+on:
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ github.base_ref == 'main' }}
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+      - name: Checkout Main
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Packages
+        run: npm install
+      - name: Build Application
+        run: npm run build
+      # - name: Save Build
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: build
+      #     path: build
+      #     node-version: ${{ matrix.node-version }}
