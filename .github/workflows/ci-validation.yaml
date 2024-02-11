@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.ref == 'main'
+    if: ${{ github.base_ref == 'main' }}
     steps:
       - name: Checkout Main
         uses: actions/checkout@v4
