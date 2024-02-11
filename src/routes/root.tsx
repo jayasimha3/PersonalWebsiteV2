@@ -1,5 +1,5 @@
-import { Navbar, Footer } from '../common/Navbar.tsx';
-import { HomepageBody } from '../homepage/Homepage.tsx'
+import { Navbar, Footer } from '../common/Navbar';
+import { HomepageBody } from '../homepage/Homepage'
 
 export default function Root() {
     return (
