@@ -1,7 +1,8 @@
 {
   "name": "personal-website",
-  "version": "react2.0.2",
+  "version": "react2.0.3",
   "private": true,
+  "homepage": "https://jayasimha3.github.io/PersonalWebsiteV2/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -27,7 +28,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "update-dependencies": "npm update --save/--save-dev",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "prebuild": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

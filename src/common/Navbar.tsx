@@ -38,7 +38,7 @@ export function Navbar() {
 
 export function Footer() {
   return (
-    <footer className="navbar bg-dark navbar-expand-lg sticky-bottom">
+    <footer className="navbar bg-dark navbar-expand-lg sticky-bottom position-absolute bottom-0">
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -59,8 +59,7 @@ export function Footer() {
           </a>
         </ul>
         <span className="navbar-text">
-          Rishee Jayasimha | 
-          <a className="text-monospace text-muted" href="https://github.com/jayasimha3/jayasimha3.github.io/tree/master/assets/CHANGELOG.md">Version react2.0.1</a>
+          Rishee Jayasimha | <a className="text-monospace text-muted" href="https://github.com/jayasimha3/jayasimha3.github.io/tree/master/assets/CHANGELOG.md">Version react2.0.3</a>
         </span>
       </div>
     </footer>
