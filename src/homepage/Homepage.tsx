@@ -1,47 +1,69 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css';
 import { rishee } from '../common/Constants';
+import headshot from '../public/images/me/jayasimharishee.jpg';
+
+const homepage_card_style: React.CSSProperties = {
+  //maxHeight: "50%",
+  maxWidth: "1440px"
+};
 
 function HomepageImage() {
     return (
-        <img src='../static/img/homepage/jayasimharishee.jpg' className="img-fluid" alt={ rishee.name }></img>
+        <img src={headshot} className="img-fluid" alt={rishee.name}></img>
     );
 }
 
 function HomepageBody() {
     return (
-      <div className="container-xl bg-{ mode } flex">
-          <main role="main" className="inner cover">
-            <div className="card mb-3 main-card border-0" >
-              <div className="d-flex flex-wrap no-gutters">
-                <div className="col-md-8">
-                  <div className="card-body">
-                    <h1 className="cover-heading">{ rishee.name }</h1>
-                    <p className="lead">
-                      I am Rishee Jayasimha, a B.S. Computer Science and Engineering alumnus of The Ohio State University in Columbus, OH, and currently working as a software developer at General Motors.
-                      I have completed many projects including using machine learning to rank college football teams, creating an AI-assisted kitchen assistant,
-                      and creating a database for a library. I am a motivated person who enjoys being challenged; I have programmed in SQL, Java, C, and Python, among other langauges.                
-                    </p>
-                    <p className="home text-muted">
-                      Some extracurricular activities I enjoy are playing video games, playing board games, and playing my trumpet. I have auditioned for The Ohio State University Marching Band 
-                      (TBDBITL) and participated in Athletic Band and concert bands at Ohio State.
-                    </p>
-                    <p className="home text-muted">
-                      I am not actively seeking employment opportunities, but will consider any opportunities I might recieve.               
-                    </p>
-                    <p className="lead">
-                      <a href="/about" className="btn btn-lg btn-secondary">Learn more</a>
-                    </p>
-                  </div>
+      <div className="d-flex justify-content-evenly">
+        <div className="border border-0 card flex" style={homepage_card_style}>
+          <div className="row g-0">
+            <div className="col-md-8">
+              <div className="card-body">
+                <h2 className="card-title">{rishee.name}</h2>
+                <p className="lead card-text">
+                  I am Rishee Jayasimha, a cloud developer at General Motors in Detroit, MI.
+                </p>
+                <div className="col justify-content-start">
+                  <h5>About</h5>
+                  <p>
+                    I am a graduate of The Ohio State University in Columbus, OH, graduating with a B.S. Computer Science and Engineering degree in 2020.
+                    I have experience with HTML, Python, Java, Kubernetes, Azure, and more. I also like building Lego sets, reading, playing video games, and tinkering with my homelab in my free time.    
+                  </p>
+                  <a className="btn btn-outline-info" href="/about" type="button">Learn More</a>
                 </div>
-                <div className="col-md-4 flex">
-                  <HomepageImage></HomepageImage>
+                <div className="col justify-content-start mt-3">
+                  <h5>Career</h5>   
+                  <p className="card-text">
+                    I have worked at General Motors since 2021, joining the Storage Automation team as a software developer, then moving to the development team for the GM internal cloud in 2022. I worked on various projects to drive more automation that reduced risk and increased efficiency.
+                    Some areas I worked on include Kubernetes, Postgres, Azure, and Generative AI applications.
+                  </p>
+                  <a className="btn btn-outline-info" href="/employment" type="button">Learn More</a>
+                </div>
+                <div className="col justify-content-start mt-3">
+                  <h5>Projects</h5>   
+                  <p className="card-text">
+                    Some projects I've worked on include this website, large language model evaluation, chatbots, cloud platform migrations, Spring Framework applications, and more.
+                  </p>
+                  <a className="btn btn-outline-info" href="/projects" type="button">Learn More</a>
+                </div>
+                <div className="col justify-content-start mt-3">
+                  <h5>Other Interests and Hobbies</h5>   
+                  <p className="card-text">
+                    I like working on my home server, coding, building Lego sets, and playing tabletop and video games during my free time. I love to build things and break things, whether it's something I built with Legos, or an application on my server or one I built.
+                  </p>
+                  <a className="btn btn-outline-info" href="/extracurricular" type="button">Learn More</a>
                 </div>
               </div>
             </div>
-          </main>
+            <div className="col justify-content-end">
+              <HomepageImage></HomepageImage>
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
 
-export { HomepageImage, HomepageBody };
+export { HomepageBody };
