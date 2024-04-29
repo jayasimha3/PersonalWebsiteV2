@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css';
 import { rishee } from '../common/Constants';
-import headshot from '../public/images/me/jayasimharishee.jpg';
+import headshot from '../static/images/me/jayasimharishee.jpg';
 
 const homepage_card_style: React.CSSProperties = {
   //maxHeight: "50%",
