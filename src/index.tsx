@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
 import "./index.css";
+import "./css/custom.css";
 import App from "./App";
 
 import { Tooltip } from "bootstrap";
