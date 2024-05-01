@@ -23,6 +23,9 @@ New Employment Page.
 - removed most ./public elements [`a53e597`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/a53e5978207f39a88233ef17497de6bb88c5a1f4)
 - renamed public to static [`c04a3cd`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/c04a3cd0e6220713cf8f6e59ae39e2e2ec7d0b93)
 - redisigned employment page [`d2848f9`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/d2848f9a3a6456c5a68a0eac0a12dfd8d01e7a7f)
+- removing unused vars [`6f6c0e4`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/6f6c0e4c603f25ead476aa177f9b73a529834a5a)
+- removing cusotm css [`85c1339`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/85c13398a8ec703b5229671f88abadfed1a74843)
+- removing cusotm css [`61ae875`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/61ae8751fd54ab9ae9cc89b63ad0b6c64014451a)
 
 ## [vreact2.0.4](https://github.com/jayasimha3/PersonalWebsiteV2/compare/v2.0.3-react-v1...vreact2.0.4)
 
@@ -34,6 +37,7 @@ New Employment Page.
 
 - updated changelog [`c25597d`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/c25597dfacda410d812438fd988ada1e5edfec0b)
 - updating changelog [`1036662`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/10366627afaf2419815edbdeee8f4adccccdb462)
+- added github repo link and changed padding and margins to make the ocntact button look better [`b6b080f`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/b6b080f549c77e1aac65d8d46e144a1a916e1240)
 - remove gh-pages stuff [`993698d`](https://github.com/jayasimha3/PersonalWebsiteV2/commit/993698da8395a7f2380a420382387fe194de7f08)
 
 ## [v2.0.3-react-v1](https://github.com/jayasimha3/PersonalWebsiteV2/compare/v2.0.2-react-v1...v2.0.3-react-v1) - 2024-03-03
