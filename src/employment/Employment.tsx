@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css';
-import '../css/custom.css';
 import { Navbar, Footer } from '../common/Navbar';
 import gm from '../static/images/employment/generalmotors.svg';
 import ohio_state_stacked from '../static/images/ohiostate/ohiostate-stackedlogo.svg';
