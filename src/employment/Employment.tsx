@@ -4,9 +4,6 @@ import { Navbar, Footer } from '../common/Navbar';
 import gm from '../static/images/employment/generalmotors.svg';
 import ohio_state_stacked from '../static/images/ohiostate/ohiostate-stackedlogo.svg';
 import slu from '../static/images/slu/slu_logo.svg';
-import spring_framework from '../static/images/employment/spring-logo.svg';
-import k8s_logo from '../static/images/employment/k8s-logo.png';
-import azure from '../static/images/employment/azure.svg';
 
 function PreviousPositions() {
     return (
