@@ -1,12 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css'
 import { Navbar, Footer } from '../common/Navbar';
-import { styles } from '../common/Constants';
 import kitchen_assistant_readme from '../static/files/projects/KitchenAssistantReadme.md'
 import ml_report from '../static/files/projects/FinalReport_MLProject.pdf'
-import gm from '../static/images/employment/generalmotors.svg';
-import ohio_state_stacked from '../static/images/ohiostate/ohiostate-stackedlogo.svg';
-import slu from '../static/images/slu/slu_logo.svg';
 
 function ProjectsBody() {
     return (
