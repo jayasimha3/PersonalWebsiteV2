@@ -259,6 +259,10 @@ function EmploymentBody() {
     return (
         <>
             <Navbar></Navbar>
+            <div className="container-md justify-content-evenly">
+                <h2 className="display-2 text-light">Employment</h2>
+            </div>
+            <br></br>
             <div className="d-flex justify-content-evenly">
                 <div className="row">
                     <div className="col-2">
