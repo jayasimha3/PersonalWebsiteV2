@@ -18,6 +18,9 @@ export function Navbar() {
                 <Link to="/" className='nav-link'>Home</Link>
               </li>
               <li className="nav-item">
+                <Link to="/about" className='nav-link'>About</Link>
+              </li>
+              <li className="nav-item">
                 <Link to="/employment" className='nav-link'>Work Exprience</Link>
               </li>
               <li className="nav-item">
