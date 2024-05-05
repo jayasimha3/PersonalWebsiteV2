@@ -21,7 +21,7 @@ function HomepageBody() {
           <div className="row g-0">
             <div className="col-md-8">
               <div className="card-body">
-                <h2 className="card-title">{rishee.name}</h2>
+                <h2 className="card-title display-2">{rishee.name}</h2>
                 <p className="lead card-text">
                   I am Rishee Jayasimha, a cloud developer at General Motors in Detroit, MI.
                 </p>
