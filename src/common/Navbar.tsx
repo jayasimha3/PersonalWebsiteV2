@@ -46,7 +46,7 @@ export function Navbar() {
 
 export function Footer() {
   return (
-    <footer className="navbar bg-dark navbar-expand-lg sticky-bottom position-absolute bottom-0">
+    <footer className="navbar bg-dark navbar-expand-lg sticky-bottom position-absolute">
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
