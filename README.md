@@ -4,7 +4,7 @@
 
 This is a website about myself. The goal of this project was originally intended to further my web development skills using Angular (see [Personal Website V1](https://github.com/jayasimha3/PersonalWebsite)). I have since converted and updated the website to use newer versions of Bootstrap and a React backend instead of Angular, which you'll find in this repository.
 
-Please Note that as this is a portfolio like website, even though it is public, I will not accept contributions, and any pull requests will be rejected.
+Please note that as this is a portfolio like website, even though it is public, I will not accept contributions, and any pull requests will be rejected.
 
 ## Code
 
