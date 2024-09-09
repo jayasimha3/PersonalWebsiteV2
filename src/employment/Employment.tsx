@@ -233,13 +233,13 @@ function SkillsList() {
                                 <td>Python</td>
                                 <td>Kubernetes</td>
                                 <td></td>
-                                <td></td>
+                                <td>Jira</td>
                             </tr>
                             <tr>
                                 <td>React</td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
+                                <td>Confluence</td>
                             </tr>
                             <tr>
                                 <td>Spring Framework</td>
