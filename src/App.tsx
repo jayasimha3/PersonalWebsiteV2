@@ -7,7 +7,6 @@ import ErrorPage from './routes/error';
 import { EmploymentBody } from './employment/Employment';
 import { ProjectsBody } from './projects/Projects';
 import { ExtracurricularBody } from './extracurricular/Extracurricular';
-import { AboutBody } from './about/About';
 
 export default function App() {
   let routes: RouteObject[] = [
@@ -29,11 +28,7 @@ export default function App() {
     {
       path: "/extracurricular",
       element: <ExtracurricularBody />,
-    },
-    {
-      path: "/about",
-      element: <AboutBody />,
-    },
+    }
   ];
 
   let element = useRoutes(routes);
