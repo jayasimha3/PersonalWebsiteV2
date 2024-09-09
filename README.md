@@ -35,7 +35,11 @@ The following describes development tools, such as `npm` scripts, how the websit
 
 ### Build
 
-TODO: Write build instructions here.
+1. Update dependencies if needed (`npm run update-dependencies`)
+
+#### Development Build
+
+To build a live development version of your app for testing and debugging, run `npm run start` and navigate to http://localhost:3000.
 
 ### Tests
 
