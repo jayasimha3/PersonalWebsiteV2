@@ -61,7 +61,7 @@ export function Footer() {
         </ul>
       </div>
       <span className="navbar-text text-end">
-            Rishee Jayasimha | <a className="font-monospace text-muted" href="https://github.com/jayasimha3/PersonalWebsiteV2/blob/main/CHANGELOG.md">Version react2.0.6</a>
+            Rishee Jayasimha | <a className="font-monospace text-muted" href="https://github.com/jayasimha3/PersonalWebsiteV2/blob/main/CHANGELOG.md">Version react2.0.7</a>
         </span>
       </div>
     </nav>
