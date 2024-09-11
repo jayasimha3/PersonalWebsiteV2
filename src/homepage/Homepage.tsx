@@ -1,9 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css';
-import { Navbar, Footer } from '../common/Navbar';
-import { styles } from '../common/Constants';
-import 'bootstrap/dist/css/bootstrap.css';
-import '../common/styles.css';
 import { rishee } from '../common/Constants';
 import headshot from '../static/images/me/jayasimharishee.jpg';
 import azure from '../static/images/employment/azure.svg';
