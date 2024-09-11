@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+![CI Validation](https://github.com/jayasimha3/PersonalWebsiteV2/actions/workflows/ci-validation/badge.svg?branch=feature-1)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Personal Website
 
-## Available Scripts
+This is a website about myself. The goal of this project was originally intended to further my web development skills using Angular (see [Personal Website V1](https://github.com/jayasimha3/PersonalWebsite)). I have since converted and updated the website to use newer versions of Bootstrap and a React backend instead of Angular, which you'll find in this repository.
 
-In the project directory, you can run:
+Please note that as this is a portfolio like website, even though it is public, I will not accept contributions, and any pull requests will be rejected.
 
-### `npm start`
+## Code
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The following technologies were used:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React](https://github.com/facebook/react) - *Backend*
+- [Create React App](https://github.com/facebook/create-react-app) - *Create Starter App*
+- [Bootstrap](https://github.com/twbs) - *UI Elements*
+- [auto-changelog](https://github.com/CookPete/auto-changelog) - *Generate Changelog*
+- [NPM](https://github.com/npm) - *Package Manager*
+- [GitHub Pages](https://pages.github.com/) - *Hosting*
+- [Cloudflare](https://www.cloudflare.com/) - *Custom Domain*
 
-### `npm test`
+## Development
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> NOTE: This repository is closed for public contributions as it's a personal website.
 
-### `npm run build`
+The following describes development tools, such as `npm` scripts, how the website is built, how to use `auto-changelog`, and how the website is deployed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Scripts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `npm run start`: Equivalent to `react-scripts start`, and **starts a local webserver** for development.
+- `npm run build`: Equivalent to `react-scripts build`, and **builds the app for production** to the `build` folder.
+- `npm run test`: Equivalent to `react-scripts test`, and **launches the test runner** for unit tests.
+- `npm run update-dependencies`: Equivalent to `npm update --save/--save-dev`, and **updates all dependencies** to their latest versions.
+- `npm run version`: Runs `auto-changelog -p && git add CHANGELOG.md` for **generating a changelog**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Build
 
-### `npm run eject`
+1. Update dependencies if needed (`npm run update-dependencies`)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Development Build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To build a live development version of your app for testing and debugging, run `npm run start` and navigate to http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Tests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+There are no unit tests at the moment, but these will be added after release.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+TODO: Add deployment instructions here.

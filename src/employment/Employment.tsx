@@ -9,9 +9,113 @@ function PreviousPositions() {
     return (
         <>
             <div className="accordion" id="accordionPreviousPositions">
-                <div className="accordion-item">
+            <div className="accordion-item">
                     <h2 className="accordion-header">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <div className="container-lg">
+                            <div className="row">
+                                <div className="col-lg">
+                                    AI Developer/Design Tools, <b>General Motors</b>
+                                </div>
+                                <div className="col-2 position-absolute end-0 top-50 translate-middle-y">
+                                    <span className="badge text-bg-info">Sept 2023 - Present</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    </h2>
+                    <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                        <div className="accordion-body">
+                            <div className="clearfix">
+                                <img src={gm} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                My current role includes various responsibilities. Before the Jira project listed above, I worked with AI/ML to make a chatbot for GM developers.
+                                This included:
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item d-flex justify-content-between align-items-start">
+                                        <div className="ms-2 me-auto">
+                                            <div className="fw-bold">AzureAI Chatbot</div>
+                                            Created a chatbot based on Microsoft's Azure OpenAI RAG <a href="https://github.com/Azure-Samples/azure-search-openai-demo">Chatbot demo app</a>.
+                                            The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
+                                            Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item d-flex justify-content-between align-items-start">
+                                        <div className="ms-2 me-auto">
+                                            <div className="fw-bold">Response Evaluation</div>
+                                            Lead the research of evaluation tools that can be used to evaluate RAG model responses.
+                                            Researched <a href="https://github.com/EleutherAI/lm-evaluation-harness">EleutherAI's Evaluation Harness</a>, <a href="https://github.com/stanford-crfm/helm">Stanford's HELM</a>, and <a href="https://github.com/Azure-Samples/ai-rag-chat-evaluator">Azure's RAG Evaluator</a>.
+                                            Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                 
+                        </div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <h2 className="accordion-header">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div className="container-lg">
+                            <div className="row">
+                                <div className="col-lg">
+                                    Cloud Developer, <b>General Motors</b>
+                                </div>
+                                <div className="col-2 position-absolute end-0 top-50 translate-middle-y">
+                                    <span className="badge text-bg-info">Apr 2022 - Sept 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                        <div className="accordion-body">
+                            <div className="clearfix">
+                                <img src={gm} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                As a cloud developer, I worked with infrastructure and microservices as part of GM's <i>Galileo</i> internal cloud. I worked with <i>Pivotal Cloud Foundry</i>, <i>Kubernetes</i>, and various pipelines for build and deployment.
+                                Some specific projects I woked on were:
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item d-flex justify-content-between align-items-start">
+                                        <div className="ms-2 me-auto">
+                                            <div className="fw-bold">GM Kubernetes Developer Wiki</div>
+                                            Led efforts to document standards for GM to deploy and maintain Kubernetes applications. 
+                                            This documentation was visible to any employee at GM, and is the first stop for questions, how-to tutorials, and best practices for all GM IT deployments to Kubernetes. 
+                                            This documentation also serves as a collection of examples from across the entire company for deployments to Kubernetes.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item d-flex justify-content-between align-items-start">
+                                        <div className="ms-2 me-auto">
+                                            <div className="fw-bold">Kubernetes Service Request Automation</div>
+                                            Built a module using Spring Framework REST API service for:
+                                            <ul>
+                                                <li>Automating Kubernetes Cluster namespace updates</li>
+                                                <li>Increasing quota limits</li>
+                                                <li>Add or remove namespaces</li>
+                                                <li>Manage users and their access</li>
+                                            </ul>
+                                            This reduced manual work from 1 hour per request to less than a minute per request.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item d-flex justify-content-between align-items-start">
+                                        <div className="ms-2 me-auto">
+                                            <div className="fw-bold">PCF to Kubernetes Migration</div>
+                                            Was a lead on the migration of various spring framework and angular applications from <i>Pivotal Cloud Foundry (PCF)</i> to <i>Kubernetes (K8s)</i>.
+                                            This included setting standards for build and deployment, k8s configuration, and redevelopment of applications to be containerized.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                 
+                        </div>
+                    </div>
+                </div>
+                <div className="accordion-item">
+                    <h2 className="accordion-header">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
@@ -24,7 +128,7 @@ function PreviousPositions() {
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <img src={gm} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
@@ -84,7 +188,7 @@ function PreviousPositions() {
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
@@ -97,7 +201,7 @@ function PreviousPositions() {
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <img src={ohio_state_stacked} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
@@ -109,7 +213,7 @@ function PreviousPositions() {
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
@@ -122,7 +226,7 @@ function PreviousPositions() {
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <img src={ohio_state_stacked} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
@@ -133,7 +237,7 @@ function PreviousPositions() {
                 </div>
                 <div className="accordion-item position-relative">
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
@@ -146,7 +250,7 @@ function PreviousPositions() {
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <img src={slu} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
@@ -169,18 +273,9 @@ function CurrentEmploymentDescription() {
             <ul className="list-group list-group-flush">
                 <li className="list-group-item d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
-                        <div className="fw-bold">AzureAI Chatbot</div>
-                        Created a chatbot based on Microsoft's Azure OpenAI RAG <a href="https://github.com/Azure-Samples/azure-search-openai-demo">Chatbot demo app</a>.
-                        The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
-                        Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
-                    </div>
-                </li>
-                <li className="list-group-item d-flex justify-content-between align-items-start">
-                    <div className="ms-2 me-auto">
-                        <div className="fw-bold">Response Evaluation</div>
-                        Lead the research of evaluation tools that can be used to evaluate RAG model responses.
-                        Researched <a href="https://github.com/EleutherAI/lm-evaluation-harness">EleutherAI's Evaluation Harness</a>, <a href="https://github.com/stanford-crfm/helm">Stanford's HELM</a>, and <a href="https://github.com/Azure-Samples/ai-rag-chat-evaluator">Azure's RAG Evaluator</a>.
-                        Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
+                        <div className="fw-bold">Develop a Issue Tracking Solution for GM within Atlassian Jira</div>
+                        Currently GM uses a self-hosted solution for tracking issues with pre-production vehicles. In order to better integrate with other teams, we're moving this solution to Jira cloud.
+                        Within scope are reporting for issues in various stages, using workflows to allow or reject moving between stages, approvals to move or mark done, and API integration with other GM systems, not necessarily housed within Jira.
                     </div>
                 </li>
                 <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -233,13 +328,13 @@ function SkillsList() {
                                 <td>Python</td>
                                 <td>Kubernetes</td>
                                 <td></td>
-                                <td></td>
+                                <td>Jira</td>
                             </tr>
                             <tr>
                                 <td>React</td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
+                                <td>Confluence</td>
                             </tr>
                             <tr>
                                 <td>Spring Framework</td>
@@ -261,18 +356,16 @@ function EmploymentBody() {
             <Navbar></Navbar>
             <div className="container-md justify-content-evenly">
                 <h2 className="display-2 text-light">Employment</h2>
-            </div>
-            <br></br>
-            <div className="d-flex justify-content-evenly">
+                <br></br>
                 <div className="row">
                     <div className="col-2">
                         <img src={gm} width="100%" alt="General Motors"></img>
                     </div>
                     <div className="col-lg">
-                        <h1 className="text-light">Artificial Intelligence Developer <span className="badge text-bg-secondary">Current</span></h1>
+                        <h1 className="text-light">Software Engineer <span className="badge text-bg-secondary">Current</span></h1>
                         <h4 className="fw-lighter text-light">General Motors, Warren MI</h4>
-                        <h6 className="fst-italic fw-lighter text-light">Since April 2022</h6>
-                        <p className="text-light">Software Developer at GM designing solutions that use Generative Artificial Intelligence.</p>
+                        <h6 className="fst-italic fw-lighter text-light">Since September 2023</h6>
+                        <p className="text-light">Software Developer at GM designing solutions on an enterprise scale.</p>
                     </div>
                 </div>
             </div>
