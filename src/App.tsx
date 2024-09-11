@@ -28,7 +28,7 @@ export default function App() {
     {
       path: "/extracurricular",
       element: <ExtracurricularBody />,
-    },
+    }
   ];
 
   let element = useRoutes(routes);
