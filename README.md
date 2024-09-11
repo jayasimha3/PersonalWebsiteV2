@@ -29,7 +29,6 @@ The following describes development tools, such as `npm` scripts, how the websit
 - `npm run start`: Equivalent to `react-scripts start`, and **starts a local webserver** for development.
 - `npm run build`: Equivalent to `react-scripts build`, and **builds the app for production** to the `build` folder.
 - `npm run test`: Equivalent to `react-scripts test`, and **launches the test runner** for unit tests.
-- `npm run eject`: Equivalent to `react-scripts eject`. *TODO: Consider removing*
 - `npm run update-dependencies`: Equivalent to `npm update --save/--save-dev`, and **updates all dependencies** to their latest versions.
 - `npm run version`: Runs `auto-changelog -p && git add CHANGELOG.md` for **generating a changelog**.
 
