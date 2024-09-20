@@ -6,7 +6,6 @@ import Root from './routes/root';
 import ErrorPage from './routes/error';
 import { EmploymentBody } from './employment/Employment';
 import { ProjectsBody } from './projects/Projects';
-import { ExtracurricularBody } from './extracurricular/Extracurricular';
 
 export default function App() {
   let routes: RouteObject[] = [
@@ -25,10 +24,6 @@ export default function App() {
       path: "/projects",
       element: <ProjectsBody />,
     },
-    {
-      path: "/extracurricular",
-      element: <ExtracurricularBody />,
-    }
   ];
 
   let element = useRoutes(routes);
