@@ -26,9 +26,6 @@ export function Navbar() {
               <li className="nav-item">
                 <Link to="/projects" className='nav-link'>Projects</Link>
               </li>
-              <li className="nav-item">
-                <Link to="/extracurricular" className='nav-link'>Extracurricular</Link>
-              </li>
             </ul>
           </div>
         </div>
