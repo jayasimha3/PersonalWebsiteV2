@@ -12,16 +12,16 @@ on:
 #   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
 
 jobs:
+  call_build_workflow:
+    uses: ./.github/workflows/buid.yaml@workflows
+    with:
+      deploy: false
+      docker: false
   build:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     steps:
-      - name: Checkout Main
-        uses: actions/checkout@v4
-      - name: Build Website
-        uses: ./.github/workflows/build.yaml@workflows
-        with:
-          deploy: false
-          docker: true
+      # - name: Checkout Main
+      #   uses: actions/checkout@v4
       # - name: Download Build
       #   uses: actions/download-artifact@v4
       #   with:
