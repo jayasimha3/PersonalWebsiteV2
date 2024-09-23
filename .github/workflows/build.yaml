@@ -24,6 +24,23 @@ on:
         required: false
         default: "react2.0.8-rc1"
         type: string
+  workflow_call:
+    inputs:
+      deploy:
+        description: 'Deploy to Github Pages'
+        required: true
+        default: true
+        type: boolean
+      docker:
+        description: 'Build Docker Image'
+        required: true
+        default: true
+        type: boolean
+      tag:
+        description: 'Release Tag, will be used by Docker if selected'
+        required: false
+        default: "react2.0.8-rc1"
+        type: string
 
 jobs:
   build:
