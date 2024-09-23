@@ -22,6 +22,7 @@ jobs:
     steps:
       - name: Checkout Main
         uses: actions/checkout@v4
+      - run: gh run list --workflow "Build Release"
       - name: Download Build
         uses: actions/download-artifact@v4
         with:
