@@ -1,0 +1,32 @@
+name: Deploy Build
+
+on:
+  workflow_dispatch:
+
+# permissions:
+#   contents: read
+#   packages: write
+
+# env:
+#   REPO: ${{ vars.REPOSITORY }}
+#   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
+
+jobs:
+  build:
+    runs-on: github-actions-runner-self-hosted-k8s-pw
+    steps:
+      - name: Checkout Main
+        uses: actions/checkout@v4
+      - name: Build Website
+        uses: ./.github/workflows/build.yaml@workflows
+        with:
+          deploy: false
+          docker: true
+      # - name: Download Build
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: personal-website-build
+      #     github-token: ${{ github.token }}
+      #     repository: ${{ env.REPO }}
+      - run: ls -la
+      - run: echo "tag from build is ${{ env.tag }}
