@@ -64,8 +64,8 @@ jobs:
       attestations: write
       id-token: write
     steps:
-      - name: Set permissions
-        run: sudo chmod 666 /var/run/docker.sock
+      # - name: Set permissions
+      #   run: sudo chmod 666 /var/run/docker.sock
       - name: Checkout Main
         uses: actions/checkout@v4
       - name: Download Build
