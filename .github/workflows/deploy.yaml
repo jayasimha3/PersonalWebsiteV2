@@ -16,7 +16,7 @@ on:
       tag:
         description: 'Release Tag, will be used by Docker if selected'
         required: false
-        default: "react2.0.8-rc1"
+        default: "2.1-rc1"
         type: string
   push:
     branches:
@@ -42,6 +42,7 @@ jobs:
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
+    if: ${{ steps.pages == true }}
     steps:
       # - name: Checkout Main
       #   uses: actions/checkout@v4
@@ -56,6 +57,7 @@ jobs:
   docker:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
+    if: ${{ steps.docker == true }}
     permissions:
       contents: read
       packages: write
