@@ -42,7 +42,7 @@ jobs:
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
-    if: ${{ steps.pages == true }}
+    if: ${{ steps.deploy == true }}
     steps:
       # - name: Checkout Main
       #   uses: actions/checkout@v4
