@@ -1,12 +1,6 @@
 name: Build Release
 
 on:
-  # push:
-  #   branches:
-  #     - 'main'
-  #   paths:
-  #     - 'src/*'
-  #     - '**.json'
   workflow_dispatch:
     inputs:
       deploy:
@@ -22,18 +16,39 @@ on:
       tag:
         description: 'Release Tag, will be used by Docker if selected'
         required: false
-        default: "react2.0.8-rc1"
+        default: "2.1-rc1"
         type: string
+  workflow_call:
+    inputs:
+      deploy:
+        description: 'Deploy to Github Pages'
+        required: true
+        default: true
+        type: boolean
+      docker:
+        description: 'Build Docker Image'
+        required: true
+        default: true
+        type: boolean
+      tag:
+        description: 'Release Tag, will be used by Docker if selected'
+        required: false
+        default: "2.1-rc1"
+        type: string
+    outputs:
+      tag:
+        description: 'Release Tag'
+        value: ${{ inputs.tag }}
+
+env:
+  ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
 
 jobs:
   build:
     runs-on: github-actions-runner-self-hosted-k8s-pw
-    #if: ${{ github.base_ref == 'main' }}
     strategy:
       matrix:
         node-version: [20.x]
-    outputs:
-      tag: {{ steps.output_tag.tag }}
     steps:
       - name: Checkout Main
         uses: actions/checkout@v4
@@ -45,11 +60,9 @@ jobs:
         run: npm install
       - name: Build Application
         run: npm run build
-      - name: Output Tag
-        id: output_tag
-        run: echo "tag=${{ inputs.tag }}" >> $GITHUB_OUTPUT
-      # - name: Upload Artifact
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: ${{ env.ARTIFACT_NAME }}
-      #     path: ./build
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        if: ${{ github.event_name }} != pull_request 
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: ./build
