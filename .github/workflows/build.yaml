@@ -44,7 +44,7 @@ on:
     outputs:
       tag:
         description: 'Release Tag'
-        value: ${{ steps.outputs.tag }}
+        value: ${{ workflow_call.inputs.tag }}
 
 env:
   # REPO: ${{ vars.REPOSITORY }}
