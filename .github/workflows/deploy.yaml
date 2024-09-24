@@ -2,6 +2,22 @@ name: Deploy Build
 
 on:
   workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Deploy to Github Pages'
+        required: true
+        default: true
+        type: boolean
+      docker:
+        description: 'Build Docker Image'
+        required: true
+        default: true
+        type: boolean
+      tag:
+        description: 'Release Tag, will be used by Docker if selected'
+        required: false
+        default: "react2.0.8-rc1"
+        type: string
   push:
     branches:
       - 'main'
@@ -9,15 +25,12 @@ on:
       - 'src/*'
       - '**.json'
 
-# permissions:
-#   contents: read
-#   packages: write
-
 env:
   # REPO: ${{ vars.REPOSITORY }}
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  TAG: ${{ inputs.tag }}
 
 jobs:
   build:
@@ -25,6 +38,7 @@ jobs:
     with:
       deploy: false
       docker: false
+      tag: ${{ env.TAG }}
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
