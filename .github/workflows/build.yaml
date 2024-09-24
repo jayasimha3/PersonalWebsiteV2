@@ -1,12 +1,6 @@
 name: Build Release
 
 on:
-  # push:
-  #   branches:
-  #     - 'main'
-  #   paths:
-  #     - 'src/*'
-  #     - '**.json'
   workflow_dispatch:
     inputs:
       deploy:
@@ -47,18 +41,14 @@ on:
         value: ${{ inputs.tag }}
 
 env:
-  # REPO: ${{ vars.REPOSITORY }}
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
 
 jobs:
   build:
     runs-on: github-actions-runner-self-hosted-k8s-pw
-    #if: ${{ github.base_ref == 'main' }}
     strategy:
       matrix:
         node-version: [20.x]
-    # outputs:
-    #   tag: ${{ steps.output_tag.tag }}
     steps:
       - name: Checkout Main
         uses: actions/checkout@v4
@@ -72,6 +62,7 @@ jobs:
         run: npm run build
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
+        if: ${{ github.event_name }} != pull_request 
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: ./build
