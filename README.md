@@ -1,4 +1,4 @@
-![CI Validation](https://github.com/jayasimha3/PersonalWebsiteV2/actions/workflows/deploy/badge.svg?branch=main)
+![CI Validation](https://github.com/jayasimha3/PersonalWebsiteV2/actions/workflows/deploy.yaml/badge.svg?branch=main)
 
 # Personal Website
 
