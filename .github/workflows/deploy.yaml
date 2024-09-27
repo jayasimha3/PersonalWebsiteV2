@@ -26,7 +26,6 @@ on:
       - '**.json'
 
 env:
-  # REPO: ${{ vars.REPOSITORY }}
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
@@ -43,17 +42,30 @@ jobs:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
     if: ${{ inputs.deploy == true }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       # - name: Checkout Main
       #   uses: actions/checkout@v4
-      # - name: Download Build
-      #   uses: actions/download-artifact@v4
+      - name: Download Build
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: ./build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      # - name: Upload Pages Build
+      #   uses: actions/upload-pages-artifact@v3
       #   with:
-      #     name: personal-website-build
-      #     github-token: ${{ github.token }}
-      #     repository: ${{ env.REPO }}
-      - run: ls -la
-      - run: echo "tag from build is ${{ env.tag }}
+      #     path: ./build
+      # - name: Deploy to GitHub Pages
+      #   uses: actions/deploy-pages@v4
+      #   id: deployment
   docker:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
@@ -64,8 +76,6 @@ jobs:
       attestations: write
       id-token: write
     steps:
-      # - name: Set permissions
-      #   run: sudo chmod 666 /var/run/docker.sock
       - name: Checkout Main
         uses: actions/checkout@v4
       - name: Download Build
