@@ -6,7 +6,7 @@ on:
       deploy:
         description: 'Deploy to Github Pages'
         required: true
-        default: true
+        default: false
         type: boolean
       docker:
         description: 'Build Docker Image'
