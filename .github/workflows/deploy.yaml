@@ -59,13 +59,13 @@ jobs:
           path: ./build
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      # - name: Upload Pages Build
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: ./build
-      # - name: Deploy to GitHub Pages
-      #   uses: actions/deploy-pages@v4
-      #   id: deployment
+      - name: Upload Pages Build
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        id: deployment
   docker:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
