@@ -78,6 +78,14 @@ function Projects() {
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
+                                    <div className="fw-bold">Chatbot Response Evaluation <span className="badge text-bg-primary">GM</span></div>
+                                    Lead the research of evaluation tools that can be used to evaluate RAG model responses.
+                                    Researched <a href="https://github.com/EleutherAI/lm-evaluation-harness">EleutherAI's Evaluation Harness</a>, <a href="https://github.com/stanford-crfm/helm">Stanford's HELM</a>, and <a href="https://github.com/Azure-Samples/ai-rag-chat-evaluator">Azure's RAG Evaluator</a>.
+                                    Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
+                                </div>
+                            </li>
+                            <li className="list-group-item d-flex justify-content-between align-items-start">
+                                <div className="ms-2 me-auto">
                                     <div className="fw-bold">Kubernetes Service Request Automation <span className="badge text-bg-primary">GM</span></div>
                                         Built a module using Spring Framework REST API service for automating Kubernetes Cluster namespace updates, such as increasing quota limits, add or remove namespaces, manage users and their access, reducing manual work from 1 hour per request to a minute per request.
                                 </div>
