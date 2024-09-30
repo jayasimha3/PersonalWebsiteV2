@@ -27,7 +27,7 @@ function ProjectsBody() {
                     <li className="list-group-item d-flex justify-content-between align-items-start">
                         <div className="ms-2 me-auto">
                             <div className="fw-bold">Personal Website <span className="badge text-bg-secondary">Personal</span></div>
-                            Created <a href="https://risheejayasimha.com">this website</a> to showcase my work, skills and experiences. This project was first done in 2020 during the COVID pandemic as a way to enhance my web development skills.
+                            Created <a href="/">this website</a> to showcase my work, skills and experiences. This project was first done in 2020 during the COVID pandemic as a way to enhance my web development skills.
                             At the time, it was built using Angular as the backend.
                             In 2023-2024, the website was converted to use React with Typescript, and hosted using Github pages.
                             <br></br>
@@ -81,7 +81,7 @@ function Projects() {
                                     <div className="fw-bold">Chatbot Response Evaluation <span className="badge text-bg-primary">GM</span></div>
                                     Lead the research of evaluation tools that can be used to evaluate RAG model responses.
                                     Researched <a href="https://github.com/EleutherAI/lm-evaluation-harness">EleutherAI's Evaluation Harness</a>, <a href="https://github.com/stanford-crfm/helm">Stanford's HELM</a>, and <a href="https://github.com/Azure-Samples/ai-rag-chat-evaluator">Azure's RAG Evaluator</a>.
-                                    Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
+                                            Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
                                 </div>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
