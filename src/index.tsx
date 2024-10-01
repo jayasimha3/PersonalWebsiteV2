@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import { Navbar, Footer } from "./common/Navbar";
 
 import "./index.css";
 import App from "./App";
@@ -18,7 +19,11 @@ if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
       <BrowserRouter>
+      <div className="bg-dark d-flex flex-column h-100" data-bs-theme="dark">
+        <Navbar></Navbar>
         <App />
+        <Footer></Footer>
+      </div>
       </BrowserRouter>
     </React.StrictMode>
   );

@@ -4,9 +4,9 @@ import { HomepageBody } from '../homepage/Homepage'
 export default function Root() {
     return (
       <>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         <HomepageBody></HomepageBody>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </>
     );
   }

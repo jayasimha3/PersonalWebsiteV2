@@ -6,6 +6,7 @@ import Root from './routes/root';
 import ErrorPage from './routes/error';
 import { EmploymentBody } from './employment/Employment';
 import { ProjectsBody } from './projects/Projects';
+import { Navbar, Footer } from './common/Navbar';
 
 export default function App() {
   let routes: RouteObject[] = [
@@ -29,8 +30,10 @@ export default function App() {
   let element = useRoutes(routes);
 
   return (
-    <div className="bg-dark" data-bs-theme="dark">
+    <>
+    {/* <Navbar></Navbar> */}
        {element}
-     </div>
+     {/* <Footer></Footer> */}
+     </>
   );
 }
