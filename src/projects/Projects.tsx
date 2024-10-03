@@ -141,13 +141,13 @@ function Projects() {
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Homelab/Self Hosted Kubernetes Cluster <span className="badge text-bg-secondary">Personal</span></div>
-                                    Deployed a Kubernetes cluster at home, using <a href="https://k3s.io/">k3s</a>. This cluster was built to further my understanding of microservices, networking, and hosting.
-                                    As a result, I have gained or furthered networking experience, AI experience, NAS/Storage experience, and automation experience. Documentation is hosted through an nginx container running a docusaurus website, built upon PR completion to a self-hosted Gitea repository.
-                                    Cluster deployments and updates will be handled through Ansible playbooks, and service deployment will be handled through workflows in Gitea.
+                                    Deployed a Kubernetes cluster at home, using <a href="https://www.talos.dev/">Talos Linux</a> on Proxmox. This cluster was built to further my understanding of microservices, networking, and hosting.
+                                    As a result, I have gained or furthered networking experience, AI experience, NAS/Storage experience, and automation experience. Documentation is hosted through an nginx container running a docusaurus website, built upon PR completion to a self-hosted <a href="https://forgejo.org/">Forgejo</a> repository.
+                                    Cluster updates (to Kubernetes and Talos) will be handled through Ansible playbooks, and service deployments are handled using <a href="https://fluxcd.io/">FluxCD</a> linked to a Github repository.
                                     Some services or operating systems I host are listed below.
                                     <br></br>
-                                    <div className="btn-group mt-2 disabled" role="group" aria-label="Basic example">
-                                        <button type="button" className="btn btn-outline-secondary btn-sm">Gitea</button>
+                                    <div className="btn-group mt-2 disabled" role="group" aria-label="Self Hosted Applications">
+                                        <button type="button" className="btn btn-outline-secondary btn-sm">Forgejo</button>
                                         <button type="button" className="btn btn-outline-secondary btn-sm">Traefik</button>
                                         <button type="button" className="btn btn-outline-secondary btn-sm">Jellyfin</button>
                                         <button type="button" className="btn btn-outline-secondary btn-sm">PiHole</button>
