@@ -1,13 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css'
-import { Navbar, Footer } from '../common/Navbar';
 import kitchen_assistant_readme from '../static/files/projects/KitchenAssistantReadme.md'
 import ml_report from '../static/files/projects/FinalReport_MLProject.pdf'
 
 function ProjectsBody() {
     return (
         <>
-        <Navbar></Navbar>
         <div className="container-md justify-content-evenly">
             <h2 className="display-2 text-light">Projects</h2>
         </div>
@@ -27,9 +25,8 @@ function ProjectsBody() {
                     <li className="list-group-item d-flex justify-content-between align-items-start">
                         <div className="ms-2 me-auto">
                             <div className="fw-bold">Personal Website <span className="badge text-bg-secondary">Personal</span></div>
-                            Created <a href="https://risheejayasimha.com">this website</a> to showcase my work, skills and experiences. This project was first done in 2020 during the COVID pandemic as a way to enhance my web development skills.
-                            At the time, it was built using Angular as the backend.
-                            In 2023-2024, the website was converted to use React with Typescript, and hosted using Github pages.
+                            Created <a href="/">this website</a> to showcase my work, skills and experiences. This project was first done in 2020 during the COVID pandemic as a way to enhance my web development skills.
+                            At the time, it was built using the Angular framework, and in 2023-2024, the website was converted to use React with Typescript, and hosted using Github pages.
                             <br></br>
                             <a className="btn btn-outline-secondary btn-sm me-2 mt-2" href="https://github.com/jayasimha3/PersonalWebsite" role="button">Version 1 Repository</a>
                             <a className="btn btn-outline-secondary btn-sm mt-2" href="https://github.com/jayasimha3/PersonalWebsiteV2" role="button">Current Version Repository</a>
@@ -45,7 +42,6 @@ function ProjectsBody() {
         <div className="container-md">
             <Projects></Projects>
         </div>
-        <Footer></Footer>
         </>
     )
 };
@@ -74,6 +70,14 @@ function Projects() {
                                     Created a chatbot based on Microsoft's Azure OpenAI RAG <a href="https://github.com/Azure-Samples/azure-search-openai-demo">Chatbot demo app</a>.
                                     The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
                                     Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
+                                </div>
+                            </li>
+                            <li className="list-group-item d-flex justify-content-between align-items-start">
+                                <div className="ms-2 me-auto">
+                                    <div className="fw-bold">Chatbot Response Evaluation <span className="badge text-bg-primary">GM</span></div>
+                                    Lead the research of evaluation tools that can be used to evaluate RAG model responses.
+                                    Researched <a href="https://github.com/EleutherAI/lm-evaluation-harness">EleutherAI's Evaluation Harness</a>, <a href="https://github.com/stanford-crfm/helm">Stanford's HELM</a>, and <a href="https://github.com/Azure-Samples/ai-rag-chat-evaluator">Azure's RAG Evaluator</a>.
+                                            Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
                                 </div>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -137,13 +141,13 @@ function Projects() {
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Homelab/Self Hosted Kubernetes Cluster <span className="badge text-bg-secondary">Personal</span></div>
-                                    Deployed a Kubernetes cluster at home, using <a href="https://k3s.io/">k3s</a>. This cluster was built to further my understanding of microservices, networking, and hosting.
-                                    As a result, I have gained or furthered networking experience, AI experience, NAS/Storage experience, and automation experience. Documentation is hosted through an nginx container running a docusaurus website, built upon PR completion to a self-hosted Gitea repository.
-                                    Cluster deployments and updates will be handled through Ansible playbooks, and service deployment will be handled through workflows in Gitea.
+                                    Deployed a Kubernetes cluster at home, using <a href="https://www.talos.dev/">Talos Linux</a> on Proxmox. This cluster was built to further my understanding of microservices, networking, and hosting.
+                                    As a result, I have gained or furthered networking experience, AI experience, NAS/Storage experience, and automation experience. Documentation is hosted through an nginx container running a docusaurus website, built upon PR completion to a self-hosted <a href="https://forgejo.org/">Forgejo</a> repository.
+                                    Cluster updates (to Kubernetes and Talos) will be handled through Ansible playbooks, and service deployments are handled using <a href="https://fluxcd.io/">FluxCD</a> linked to a Github repository.
                                     Some services or operating systems I host are listed below.
                                     <br></br>
-                                    <div className="btn-group mt-2 disabled" role="group" aria-label="Basic example">
-                                        <button type="button" className="btn btn-outline-secondary btn-sm">Gitea</button>
+                                    <div className="btn-group mt-2 disabled" role="group" aria-label="Self Hosted Applications">
+                                        <button type="button" className="btn btn-outline-secondary btn-sm">Forgejo</button>
                                         <button type="button" className="btn btn-outline-secondary btn-sm">Traefik</button>
                                         <button type="button" className="btn btn-outline-secondary btn-sm">Jellyfin</button>
                                         <button type="button" className="btn btn-outline-secondary btn-sm">PiHole</button>
