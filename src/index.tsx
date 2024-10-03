@@ -11,6 +11,7 @@ import { Popover } from "bootstrap";
 document.addEventListener('DOMContentLoaded', function () {
 
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  // eslint-disable-next-line
   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new Popover(popoverTriggerEl))
   
 });
