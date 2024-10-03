@@ -1,13 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css'
-import { Navbar, Footer } from '../common/Navbar';
 import kitchen_assistant_readme from '../static/files/projects/KitchenAssistantReadme.md'
 import ml_report from '../static/files/projects/FinalReport_MLProject.pdf'
 
 function ProjectsBody() {
     return (
         <>
-        <Navbar></Navbar>
         <div className="container-md justify-content-evenly">
             <h2 className="display-2 text-light">Projects</h2>
         </div>
@@ -28,8 +26,7 @@ function ProjectsBody() {
                         <div className="ms-2 me-auto">
                             <div className="fw-bold">Personal Website <span className="badge text-bg-secondary">Personal</span></div>
                             Created <a href="/">this website</a> to showcase my work, skills and experiences. This project was first done in 2020 during the COVID pandemic as a way to enhance my web development skills.
-                            At the time, it was built using Angular as the backend.
-                            In 2023-2024, the website was converted to use React with Typescript, and hosted using Github pages.
+                            At the time, it was built using the Angular framework, and in 2023-2024, the website was converted to use React with Typescript, and hosted using Github pages.
                             <br></br>
                             <a className="btn btn-outline-secondary btn-sm me-2 mt-2" href="https://github.com/jayasimha3/PersonalWebsite" role="button">Version 1 Repository</a>
                             <a className="btn btn-outline-secondary btn-sm mt-2" href="https://github.com/jayasimha3/PersonalWebsiteV2" role="button">Current Version Repository</a>
@@ -45,7 +42,6 @@ function ProjectsBody() {
         <div className="container-md">
             <Projects></Projects>
         </div>
-        <Footer></Footer>
         </>
     )
 };
