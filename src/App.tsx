@@ -29,8 +29,8 @@ export default function App() {
   let element = useRoutes(routes);
 
   return (
-    <div className="bg-dark" data-bs-theme="dark">
-       {element}
-     </div>
+    <>
+      {element}
+    </>
   );
 }
