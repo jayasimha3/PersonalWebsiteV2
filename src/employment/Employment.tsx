@@ -280,7 +280,7 @@ function CurrentEmploymentDescription() {
                 <li className="list-group-item d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                         <div className="fw-bold">End-to-End Automations using LLM's</div>
-                        Leading the development of "Bi-directional" approaches, which allow for a user to ask the chatbot to take action. Currently utilizing both <a href="https://python.langchain.com/docs/modules/agents/">Langchain Agents</a> (for both GPT and Open Source Models) and <a href="https://platform.openai.com/docs/guides/function-calling">OpenAI Functions</a> (only compatible with GPT).
+                        Leading the development of "Bi-directional" approaches, which allow for a user to ask the chatbot to take action. Currently utilizing both <a href="https://python.langchain.com/docs/how_to/#agents">Langchain Agents</a> (for both GPT and Open Source Models) and <a href="https://platform.openai.com/docs/guides/function-calling">OpenAI Functions</a> (only compatible with GPT).
                         This kind of approach would allow the chatbot to "do something"; for example, if a user wants the chatbot to "send an email", the chatbot can take action to send that email using this bi-directional approach.
                     </div>
                 </li>
@@ -368,7 +368,7 @@ function EmploymentBody() {
                 </div>
             </div>
             <br></br>
-            <div className="container-md justify-content-evenly">
+            <div className="container-md justify-content-evenly pt-3">
                 <CurrentEmploymentDescription></CurrentEmploymentDescription>
             </div>
             <div className="container-md justify-content-evenly">
