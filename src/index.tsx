@@ -6,12 +6,13 @@ import { Navbar, Footer } from "./common/Navbar";
 import "./index.css";
 import App from "./App";
 
-import { Tooltip } from "bootstrap";
+import { Popover } from "bootstrap";
 
 document.addEventListener('DOMContentLoaded', function () {
-  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-  // eslint-disable-next-line
-  const tooltipList = Array.from(tooltipTriggerList).map(tooltipTriggerEl => new Tooltip(tooltipTriggerEl));
+
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new Popover(popoverTriggerEl))
+  
 });
 
 const rootElement = document.getElementById("root");

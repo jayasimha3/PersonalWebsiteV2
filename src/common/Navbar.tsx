@@ -28,7 +28,7 @@ export function Navbar() {
         <a className="AppHeader-logo ml-2" href="https://github.com/jayasimha3/PersonalWebsiteV2" aria-label="Github Repository " data-turbo="false">
           <img src={github} alt="" width="32" height="32" title="Repository"></img>
         </a>
-        <button type="button" className="btn btn-primary btn-sm ms-3 me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="<em>Email</em>: jayasimha.3@osu.edu">
+        <button type="button" className="btn btn-primary btn-sm ms-3 me-3" data-bs-toggle="popover" data-bs-custom-class="custom-popover" data-bs-placement="bottom" data-bs-html="true" data-bs-content="<a class='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' href='mailto:jayasimha.3@osu.edu'>Email</a>">
           Contact
         </button>
       </nav>
