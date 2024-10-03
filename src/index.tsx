@@ -22,6 +22,7 @@ if (rootElement) {
       <div className="bg-dark d-flex flex-column h-100" data-bs-theme="dark">
         <Navbar></Navbar>
         <App />
+        <div className="flex-grow-1"></div>
         <Footer></Footer>
       </div>
       </BrowserRouter>
