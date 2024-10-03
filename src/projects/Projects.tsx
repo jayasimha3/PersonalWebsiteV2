@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css'
+import { links } from '../common/Constants';
 import kitchen_assistant_readme from '../static/files/projects/KitchenAssistantReadme.md'
 import ml_report from '../static/files/projects/FinalReport_MLProject.pdf'
 
@@ -17,7 +18,7 @@ function ProjectsBody() {
                     <li className="list-group-item d-flex justify-content-between align-items-start">
                         <div className="ms-2 me-auto">
                             <div className="fw-bold">AzureAI Chatbot <span className="badge text-bg-primary">GM</span></div>
-                            Created a chatbot based on Microsoft's Azure OpenAI RAG <a href="https://github.com/Azure-Samples/azure-search-openai-demo">Chatbot demo app</a>.
+                            Created a chatbot based on Microsoft's Azure OpenAI RAG <a href={ links.azChatbotDemo }>Chatbot demo app</a>.
                             The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
                             Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
                         </div>
@@ -28,8 +29,8 @@ function ProjectsBody() {
                             Created <a href="/">this website</a> to showcase my work, skills and experiences. This project was first done in 2020 during the COVID pandemic as a way to enhance my web development skills.
                             At the time, it was built using the Angular framework, and in 2023-2024, the website was converted to use React with Typescript, and hosted using Github pages.
                             <br></br>
-                            <a className="btn btn-outline-secondary btn-sm me-2 mt-2" href="https://github.com/jayasimha3/PersonalWebsite" role="button">Version 1 Repository</a>
-                            <a className="btn btn-outline-secondary btn-sm mt-2" href="https://github.com/jayasimha3/PersonalWebsiteV2" role="button">Current Version Repository</a>
+                            <a className="btn btn-outline-secondary btn-sm me-2 mt-2" href={ links.websiteRepositoryV1 } role="button">Version 1 Repository</a>
+                            <a className="btn btn-outline-secondary btn-sm mt-2" href={ links.websiteRepository } role="button">Current Version Repository</a>
                         </div>
                     </li>
                 </ul>
@@ -67,7 +68,7 @@ function Projects() {
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">AzureAI Chatbot <span className="badge text-bg-primary">GM</span></div>
-                                    Created a chatbot based on Microsoft's Azure OpenAI RAG <a href="https://github.com/Azure-Samples/azure-search-openai-demo">Chatbot demo app</a>.
+                                    Created a chatbot based on Microsoft's Azure OpenAI RAG <a href={ links.azChatbotDemo }>Chatbot demo app</a>.
                                     The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
                                     Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
                                 </div>
@@ -76,7 +77,7 @@ function Projects() {
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Chatbot Response Evaluation <span className="badge text-bg-primary">GM</span></div>
                                     Lead the research of evaluation tools that can be used to evaluate RAG model responses.
-                                    Researched <a href="https://github.com/EleutherAI/lm-evaluation-harness">EleutherAI's Evaluation Harness</a>, <a href="https://github.com/stanford-crfm/helm">Stanford's HELM</a>, and <a href="https://github.com/Azure-Samples/ai-rag-chat-evaluator">Azure's RAG Evaluator</a>.
+                                    Researched <a href={ links.elutherGithub }>EleutherAI's Evaluation Harness</a>, <a href={ links.stanfordHelmGithub }>Stanford's HELM</a>, and <a href={ links.azRagEvalGithub }>Azure's RAG Evaluator</a>.
                                             Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
                                 </div>
                             </li>
@@ -101,14 +102,14 @@ function Projects() {
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Xtremio Hardware Replacement Automation <span className="badge text-bg-primary">GM</span></div>
-                                    Developed an end-to-end module using UI and REST APIs that reduced manual and hands-on tasks by about 2 hours per request for DELL's <a href="https://www.dell.com/en-us/shop/powerstore/sf/power-store?SA360CID=71700000099055147&=">Xtremio</a> storage platform. 
+                                    Developed an end-to-end module using UI and REST APIs that reduced manual and hands-on tasks by about 2 hours per request for DELL's <a href={ links.xtremio }>Xtremio</a> storage platform. 
                                     It obtained data and created a change report automatically, reducing human induced risk to the environment. As of 2022, this tool is widely used and saves a significant amount of time overall.
                                 </div>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Manufacturing Decommissioning Pre-Checks <span className="badge text-bg-primary">GM</span></div>
-                                    Script to automate gathering information on Decommissioning hostsets in GM's manufacturing environments. This utility page generated a script to run on the <a href="https://www.hpe.com/us/en/storage/3par.html">3par hosts</a>, and was a simpler version of a script generator that was widely used at the time. 
+                                    Script to automate gathering information on Decommissioning hostsets in GM's manufacturing environments. This utility page generated a script to run on the <a href={ links.threePar }>3par hosts</a>, and was a simpler version of a script generator that was widely used at the time. 
                                     This reduced execution time by about 1 hour per request.
                                 </div>
                             </li>
@@ -142,8 +143,8 @@ function Projects() {
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Homelab/Self Hosted Kubernetes Cluster <span className="badge text-bg-secondary">Personal</span></div>
                                     Deployed a Kubernetes cluster at home, using <a href="https://www.talos.dev/">Talos Linux</a> on Proxmox. This cluster was built to further my understanding of microservices, networking, and hosting.
-                                    As a result, I have gained or furthered networking experience, AI experience, NAS/Storage experience, and automation experience. Documentation is hosted through an nginx container running a docusaurus website, built upon PR completion to a self-hosted <a href="https://forgejo.org/">Forgejo</a> repository.
-                                    Cluster updates (to Kubernetes and Talos) will be handled through Ansible playbooks, and service deployments are handled using <a href="https://fluxcd.io/">FluxCD</a> linked to a Github repository.
+                                    As a result, I have gained or furthered networking experience, AI experience, NAS/Storage experience, and automation experience. Documentation is hosted through an nginx container running a docusaurus website, built upon PR completion to a self-hosted <a href={ links.forgejo }>Forgejo</a> repository.
+                                    Cluster updates (to Kubernetes and Talos) will be handled through Ansible playbooks, and service deployments are handled using <a href={ links.fluxcd }>FluxCD</a> linked to a Github repository.
                                     Some services or operating systems I host are listed below.
                                     <br></br>
                                     <div className="btn-group mt-2 disabled" role="group" aria-label="Self Hosted Applications">
@@ -190,7 +191,7 @@ function Projects() {
                                             and search results from allrecipes.com or delish.com would show. Then the user picks a recipe and can use the assistant to get 
                                             ingredients, substitutions, and the recipe itself.
                                             <br></br>
-                                            For more information, feel free to see the <a href={kitchen_assistant_readme}>README</a>, or contact me. The project recieved a 97.5% upon completion.
+                                            For more information, feel free to see the <a href={kitchen_assistant_readme}>README</a>, or contact me. The project received a 97.5% upon completion.
                                         </div>
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -202,7 +203,7 @@ function Projects() {
                                             would result in a better ranking of the top-4 teams in college football.
                                             <br></br>
                                             The project cannot be extrapolited to the real-world due to some limitations I defined when doing the project. You can learn more 
-                                            by looking at the <a href={ml_report}>report</a>, or contacting me. The project recieved an A upon submission of the report.
+                                            by looking at the <a href={ml_report}>report</a>, or contacting me. The project received an A upon submission of the report.
                                         </div>
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -216,7 +217,7 @@ function Projects() {
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">Library Circulation Database <span className="badge text-bg-danger">Ohio State</span></div>
-                                            For my databases class, in a team of 4, we created a relational database to model a library circualtion system. The database was 
+                                            For my databases class, in a team of 4, we created a relational database to model a library circulation system. The database was 
                                             created using SQLite with a Java program handling queries to the database. The database tracked a range of things; some examples 
                                             include the number of an item, names, patrons, whether something has been checked-out or not, and the items patrons checked-out (listed under 
                                             the patron). The project received an A upon submission of a report.
@@ -229,7 +230,7 @@ function Projects() {
                                             needed to email HR, or be recommended my instructors, to be hired. As our final project in the Web Apps class, my team of 4 
                                             was tasked with creating a website that would streamline the process.
                                             <br></br>
-                                            Our website used Bootstrap of the UI and Ruby (and Middleman) for the back-end. We created a portal for students, intructors, and HR to 
+                                            Our website used Bootstrap of the UI and Ruby (and Middleman) for the back-end. We created a portal for students, instructors, and HR to 
                                             apply, recommend students, and assign students directly. Students would apply for any job openings and the website would check to make 
                                             sure they have the requirements, and HR would be notified and can assign students to instructors.
                                             <br></br>
@@ -238,7 +239,7 @@ function Projects() {
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
-                                            <div className="fw-bold">Caulking Gun Nozzle Project for Forjak Industrial <span className="badge text-bg-danger">Ohio State</span></div>
+                                            <div className="fw-bold">Caulking Gun Nozzle Project for FORJAK Industrial <span className="badge text-bg-danger">Ohio State</span></div>
                                             During my technical writing class, FORJAK Industrial, based in Columbus, Ohio, tasked my team of 4 to create a nozzle that could 
                                             attach to their automated caulking gun. Their problem was that their automated caulking gun would not uniformly apply caulk 
                                             to buildings.
@@ -289,7 +290,7 @@ function Projects() {
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">Saint Louis University ARGUS Satellite <span className="badge text-bg-info">Internship</span></div>
                                             During High School, as part of a district wide initiative to give students internship experience, I joined the Space Systems Research 
-                                            Lab at Saint Louis University to help develop their <a href="https://www.sluspacelab.com/argus">ARGUS</a> cubesat. My task was to 
+                                            Lab at Saint Louis University to help develop their <a href={ links.sluArgus }>ARGUS</a> cubesat. My task was to 
                                             create remote on/off switch so that the developers would not need to enter and exit the clean room during every test. Using a solenoid 
                                             and a pen, I built a device that could turn the cubesat on or off with the push of a button.
                                         </div>
