@@ -11,3 +11,4 @@ jobs:
     with:
       deploy: false
       docker: false
+      buildType: "pr-validation"

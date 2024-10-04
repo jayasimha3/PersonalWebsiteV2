@@ -35,6 +35,10 @@ on:
         required: false
         default: "2.1-rc1"
         type: string
+      buildType:
+        description: 'Build Type - PR Validation or Release'
+        required: true
+        type: string
     outputs:
       tag:
         description: 'Release Tag'
@@ -42,6 +46,7 @@ on:
 
 env:
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
+  BUILD_TYPE: ${{ inputs.buildType }}
 
 jobs:
   build:
@@ -62,7 +67,7 @@ jobs:
         run: npm run build
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
-        if: "${{ github.event_name }} != 'pull_request'"
+        if: env.BUILD_TYPE == release
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: ./build

@@ -38,6 +38,7 @@ jobs:
       deploy: false
       docker: true
       tag: ${{ inputs.TAG }}
+      buildType: "release"
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
