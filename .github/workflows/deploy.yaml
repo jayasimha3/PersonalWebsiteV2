@@ -36,7 +36,7 @@ jobs:
     uses: ./.github/workflows/build.yaml
     with:
       deploy: false
-      docker: false
+      docker: true
       tag: ${{ inputs.TAG }}
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
