@@ -60,10 +60,9 @@ jobs:
         run: npm install
       - name: Build Application
         run: npm run build
-      - run: echo ${{ github.event_name }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
-        if: ${{ github.event_name }} != pull_request 
+        if: github.event_name != pull_request 
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: ./build
