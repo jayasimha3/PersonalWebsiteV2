@@ -46,7 +46,7 @@ on:
 
 env:
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
-  UPLOAD_ARTIFACT: "${{ github.event_type !=  'pull_request' }}"
+  UPLOAD_ARTIFACT: "${{ github.event !=  'pull_request' }}"
 
 jobs:
   build:
