@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css';
+import { links } from '../common/Constants'
 import gm from '../static/images/employment/generalmotors.svg';
 import ohio_state_stacked from '../static/images/ohiostate/ohiostate-stackedlogo.svg';
 import slu from '../static/images/slu/slu_logo.svg';
@@ -33,7 +34,7 @@ function PreviousPositions() {
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">AzureAI Chatbot</div>
-                                            Created a chatbot based on Microsoft's Azure OpenAI RAG <a href="https://github.com/Azure-Samples/azure-search-openai-demo">Chatbot demo app</a>.
+                                            Created a chatbot based on Microsoft's Azure OpenAI RAG <a href={ links.azChatbotDemo }>Chatbot demo app</a>.
                                             The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
                                             Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
                                         </div>
@@ -44,7 +45,7 @@ function PreviousPositions() {
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">Response Evaluation</div>
                                             Lead the research of evaluation tools that can be used to evaluate RAG model responses.
-                                            Researched <a href="https://github.com/EleutherAI/lm-evaluation-harness">EleutherAI's Evaluation Harness</a>, <a href="https://github.com/stanford-crfm/helm">Stanford's HELM</a>, and <a href="https://github.com/Azure-Samples/ai-rag-chat-evaluator">Azure's RAG Evaluator</a>.
+                                            Researched <a href={ links.elutherGithub }>EleutherAI's Evaluation Harness</a>, <a href={ links.stanfordHelmGithub }>Stanford's HELM</a>, and <a href={ links.azRagEvalGithub }>Azure's RAG Evaluator</a>.
                                             Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
                                         </div>
                                     </li>
@@ -139,7 +140,7 @@ function PreviousPositions() {
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">Decommissioning Pre-Checks</div>
-                                            Script to automate gathering information on Decommissioning hostsets in GM's manufacturing environments.
+                                            Script to automate gathering information on Decommissioning host sets in GM's manufacturing environments.
                                             This utility page generated a script to run on the 3par hosts, and was a simpler version of a script generator that was widely used at the time.
                                             This reduced execution time by about 1 hour per request.
                                         </div>
@@ -149,7 +150,7 @@ function PreviousPositions() {
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">Automated Pre-Change Checks</div>
-                                            Automation that would use REST API calls to an Xtremio device. This automation checked for bad devices and status of vluns and hosts.
+                                            Automation that would use REST API calls to an Xtremio device. This automation checked for bad devices and status of VLUNs and hosts.
                                             Manually checking this information would take as much as a 3-4 hours, but this automation reduced that time by about 2 hours per request.
                                         </div>
                                     </li>
@@ -159,7 +160,7 @@ function PreviousPositions() {
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
-                                            <div className="fw-bold">DELL EMC <a href="https://www.dell.com/en-us/dt/storage/powerflex.htm#scroll=off&tab0=0">PowerFlex</a></div>
+                                            <div className="fw-bold">DELL EMC <a href={ links.powerflex }>PowerFlex</a></div>
                                             SAN Cluster based on all flash storage.
                                         </div>
                                     </li>
@@ -167,7 +168,7 @@ function PreviousPositions() {
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
-                                            <div className="fw-bold">DELL EMC <a href="https://www.dell.com/en-us/shop/powerstore/sf/power-store?SA360CID=71700000099055147&=">Xtremio</a></div>
+                                            <div className="fw-bold">DELL EMC <a href={ links.xtremio }>Xtremio</a></div>
                                             SAN Cluster based on all flash storage.
                                         </div>
                                     </li>
@@ -176,8 +177,8 @@ function PreviousPositions() {
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">Other Storage Devices</div>
-                                            Dell EMC <a href="https://www.dell.com/en-us/dt/storage/powerscale/powerscale-archive-nas-storage.htm#scroll=off">Isilon</a>, HPE <a href="https://www.hpe.com/us/en/storage/3par.html">3Par</a>,
-                                            Brocade and Cisco Switches, <a href="https://www.netapp.com/">Netapp</a>, <a href="https://www.dell.com/en-us/dt/data-protection/powerprotect-backup-dd-appliances/powerprotect-dd-backup-appliances.htm#scroll=off">Datadomain</a>, and more.
+                                            Dell EMC <a href={ links.isilon }>Isilon</a>, HPE <a href={ links.threePar }>3Par</a>,
+                                            Brocade and Cisco Switches, <a href={ links.netapp }>Netapp</a>, <a href={ links.datadomain }>Datadomain</a>, and more.
                                         </div>
                                     </li>
                                 </ul> 
@@ -253,7 +254,7 @@ function PreviousPositions() {
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <img src={slu} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
-                                Solved the problem of turning the <a href="https://www.sluspacelab.com/argus">ARGUS</a> satellite on and off remotely during testing, so testers would not have to enter the clean room.
+                                Solved the problem of turning the <a href={ links.sluArgus }>ARGUS</a> satellite on and off remotely during testing, so testers would not have to enter the clean room.
                                 Built a remote on/off switch to power the satellite on and off using a solenoid and pen.
                                 This was an unpaid internship during High School.
                             </div>
@@ -280,7 +281,7 @@ function CurrentEmploymentDescription() {
                 <li className="list-group-item d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                         <div className="fw-bold">End-to-End Automations using LLM's</div>
-                        Leading the development of "Bi-directional" approaches, which allow for a user to ask the chatbot to take action. Currently utilizing both <a href="https://python.langchain.com/docs/how_to/#agents">Langchain Agents</a> (for both GPT and Open Source Models) and <a href="https://platform.openai.com/docs/guides/function-calling">OpenAI Functions</a> (only compatible with GPT).
+                        Leading the development of "Bi-directional" approaches, which allow for a user to ask the chatbot to take action. Currently utilizing both <a href={ links.langchainAgents }>Langchain Agents</a> (for both GPT and Open Source Models) and <a href={ links.openAiFunctions }>OpenAI Functions</a> (only compatible with GPT).
                         This kind of approach would allow the chatbot to "do something"; for example, if a user wants the chatbot to "send an email", the chatbot can take action to send that email using this bi-directional approach.
                     </div>
                 </li>

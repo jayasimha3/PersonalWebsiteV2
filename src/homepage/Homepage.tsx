@@ -70,7 +70,7 @@ function HomepageBody() {
                 <div className="mt-3">
                     <h5>Other Interests and Hobbies</h5>   
                     <p className="card-text">
-                        During my free time outside of work, I like programming, and working with my homelab, on which I currently host a Kubernetes cluster to host self hosted open source applicaitons such as Ollama, Jellyfin, and more.
+                        During my free time outside of work, I like programming, and working with my homelab, on which I currently host a Kubernetes cluster to host self hosted open source applications such as Ollama, Jellyfin, and more.
                         I also like reading, building Lego sets, playing my trumpet (I'm part of the Rochester Community COncert Band as of September 2024), baking, and playing video games.
                     </p>
                     <a className="btn btn-outline-info" href="/extracurricular" type="button">Learn More</a>
