@@ -65,6 +65,7 @@ jobs:
         run: npm install
       - name: Build Application
         run: npm run build
+      - run: echo ${{ github.event }}, ${{ github.event_name }}
       - run: echo ${{ env.UPLOAD_ARTIFACT }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
