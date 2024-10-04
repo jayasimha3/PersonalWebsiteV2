@@ -46,7 +46,7 @@ on:
 
 env:
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
-  BUILD_TYPE: ${{ inputs.buildType }}
+  UPLOAD_ARTIFACT: "${{ github.event_type != pull_request }}"
 
 jobs:
   build:
@@ -65,9 +65,10 @@ jobs:
         run: npm install
       - name: Build Application
         run: npm run build
+      - run: echo ${{ UPLOAD_ARTIFACT }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
-        if: ${{ env.BUILD_TYPE == "release" }}
+        if: ${{ UPLOAD_ARTIFACT }} == true
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: ./build
