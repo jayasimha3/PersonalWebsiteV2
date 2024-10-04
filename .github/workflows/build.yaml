@@ -46,7 +46,7 @@ on:
 
 env:
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
-  UPLOAD_ARTIFACT: "${{ github.event !=  'pull_request' }}"
+  UPLOAD_ARTIFACT: "${{ github.event_name !=  'pull_request' }}"
 
 jobs:
   build:
@@ -65,8 +65,6 @@ jobs:
         run: npm install
       - name: Build Application
         run: npm run build
-      - run: echo ${{ github.event }}, ${{ github.event_name }}
-      - run: echo ${{ env.UPLOAD_ARTIFACT }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         if: ${{ env.UPLOAD_ARTIFACT }} == true
