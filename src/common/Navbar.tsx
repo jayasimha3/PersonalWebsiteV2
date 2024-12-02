@@ -52,7 +52,7 @@ export function Footer() {
         </ul>
       </div>
       <span className="navbar-text text-end">
-            Rishee Jayasimha | <a className="font-monospace text-muted" href={links.websiteRepository + "/blob/main/CHANGELOG.md"}>Version 2.1-rc2</a>
+            Rishee Jayasimha | <a className="font-monospace text-muted" href={links.websiteRepository + "/blob/main/CHANGELOG.md"}>Version 2.1-rc3</a>
         </span>
       </div>
     </nav>
