@@ -11,7 +11,7 @@ const links = {
     websiteRepository: "https://github.com/jayasimha3/PersonalWebsiteV2", // used in Navbar.tsx, Projects.tsx
     githubProfile: "https://github.com/jayasimha3", // used in Navbar.tsx
     linkedin: "https://www.linkedin.com/in/jayasimha3/", // used in Navbar.tsx
-    email: "jayasimha.3@osu.edu", // used in Navbar.tsx
+    email: "rishee.jayasimha@proton.me", // used in Navbar.tsx
     azChatbotDemo: "https://github.com/Azure-Samples/azure-search-openai-demo", // used in Employment.tsx, Projects.tsx
     elutherGithub: "https://github.com/EleutherAI/lm-evaluation-harness", //used in Employment.tsx, Projects.tsx
     stanfordHelmGithub: "https://github.com/stanford-crfm/helm", // used in Employment.tsx, Projects.tsx
