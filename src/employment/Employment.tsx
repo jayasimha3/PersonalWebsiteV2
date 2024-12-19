@@ -363,7 +363,7 @@ function EmploymentBody() {
                     <div className="col-lg">
                         <h1 className="text-light">Software Engineer <span className="badge text-bg-secondary">Current</span></h1>
                         <h4 className="fw-lighter text-light">General Motors, Warren MI</h4>
-                        <h6 className="fst-italic fw-lighter text-light">Since September 2023</h6>
+                        <h6 className="fst-italic fw-lighter text-light">Since January 2021</h6>
                         <p className="text-light">Software Developer at GM designing solutions on an enterprise scale.</p>
                     </div>
                 </div>
