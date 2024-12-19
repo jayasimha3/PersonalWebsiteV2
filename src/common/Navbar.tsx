@@ -52,7 +52,10 @@ export function Footer() {
         </ul>
       </div>
       <span className="navbar-text text-end">
-            Rishee Jayasimha | <a className="font-monospace text-muted" href={links.websiteRepository + "/blob/main/CHANGELOG.md"}>Version 2.1-rc3</a>
+            Rishee Jayasimha | <a className="font-monospace text-muted" href={links.websiteRepository + "/blob/main/CHANGELOG.md"}>{process.env.REACT_APP_VERSION}</a>
+            {/* process.env.REACT_APP_VERSION comes from the REACT_APP_VERSION environment variable. 
+            For development, it is located in .env.development.
+            In the CI pipeline, environment variables through the shell will be used. */}
         </span>
       </div>
     </nav>
