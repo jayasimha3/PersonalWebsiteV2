@@ -11,3 +11,22 @@ jobs:
     with:
       deploy: false
       docker: false
+  changelog:
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+      - name: Checkout Main
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ GITHUB_HEAD_REF }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Changelog P1
+        run: cat CHANGELOG.md
+      - name: Update Changelog
+        run: npm run version
+      - name: Changelog P2
+        run: cat CHANGELOG.md

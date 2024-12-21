@@ -61,8 +61,6 @@ jobs:
         run: npm install
       - name: Set Version
         run: echo "REACT_APP_VERSION=${{ inputs.tag }}" >> "$GITHUB_ENV"
-      - name: Version
-        run: echo $REACT_APP_VERSION
       - name: Build Application
         run: npm run build
       - name: Upload Artifact
