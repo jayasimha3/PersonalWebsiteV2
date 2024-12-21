@@ -65,6 +65,13 @@ function Projects() {
                 <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                     <div className="accordion-body">
                         <ul className="list-group list-group-flush">
+                        <li className="list-group-item d-flex justify-content-between align-items-start">
+                                <div className="ms-2 me-auto">
+                                    <div className="fw-bold">Jira Custom Issue Tracker <span className="badge text-bg-primary">GM</span></div>
+                                    Developing a custom issue tracking solution within Jira. This includes othr Jira instacnes being able to create and modify issues, custom plugins for data structures, and workflows and workflow automations.
+                                    Plugins are built using <a href="https://developer.atlassian.com/platform/forge/">Atlassian Forge</a>, with React. This is the first of it's kind of application made within GM, and sets the standard for all future applications that become Jira plugins.
+                                    </div>
+                            </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">AzureAI Chatbot <span className="badge text-bg-primary">GM</span></div>

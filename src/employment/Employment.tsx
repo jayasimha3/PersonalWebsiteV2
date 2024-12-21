@@ -274,8 +274,8 @@ function CurrentEmploymentDescription() {
                 <li className="list-group-item d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                         <div className="fw-bold">Develop a Issue Tracking Solution for GM within Atlassian Jira</div>
-                        Currently GM uses a self-hosted solution for tracking issues with pre-production vehicles. In order to better integrate with other teams, we're moving this solution to Jira cloud.
-                        Within scope are reporting for issues in various stages, using workflows to allow or reject moving between stages, approvals to move or mark done, and API integration with other GM systems, not necessarily housed within Jira.
+                        Currently GM uses a self-hosted solution for tracking issues with vehicles. In order to better integrate with other teams, we're moving this solution to Jira cloud.
+                        Within scope are reporting for issues in various stages, using workflows to allow or reject moving between stages, approvals to move or mark done, API integration with other GM systems, not necessarily housed within Jira, and creating Jira plugins to facilitated data structures not shipped "in-the-box" with Jira cloud.
                     </div>
                 </li>
                 <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -283,6 +283,7 @@ function CurrentEmploymentDescription() {
                         <div className="fw-bold">End-to-End Automations using LLM's</div>
                         Leading the development of "Bi-directional" approaches, which allow for a user to ask the chatbot to take action. Currently utilizing both <a href={ links.langchainAgents }>Langchain Agents</a> (for both GPT and Open Source Models) and <a href={ links.openAiFunctions }>OpenAI Functions</a> (only compatible with GPT).
                         This kind of approach would allow the chatbot to "do something"; for example, if a user wants the chatbot to "send an email", the chatbot can take action to send that email using this bi-directional approach.
+                        Some projects I'm working on include writing or updating documentation during pull requests for new code, writing readme files based on the contents of a repository, and being able to generate requirements if existing requirements are not detailed enough.
                     </div>
                 </li>
             </ul>
@@ -363,7 +364,7 @@ function EmploymentBody() {
                     <div className="col-lg">
                         <h1 className="text-light">Software Engineer <span className="badge text-bg-secondary">Current</span></h1>
                         <h4 className="fw-lighter text-light">General Motors, Warren MI</h4>
-                        <h6 className="fst-italic fw-lighter text-light">Since September 2023</h6>
+                        <h6 className="fst-italic fw-lighter text-light">Since January 2021</h6>
                         <p className="text-light">Software Developer at GM designing solutions on an enterprise scale.</p>
                     </div>
                 </div>
