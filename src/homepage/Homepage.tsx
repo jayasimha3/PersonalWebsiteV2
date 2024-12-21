@@ -2,11 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css';
 import { rishee } from '../common/Constants';
 import headshot from '../static/images/me/jayasimharishee.jpg';
-import azure from '../static/images/employment/azure.svg';
-import k8s from '../static/images/employment/k8s-logo.png';
-import springLogo from '../static/images/employment/spring-logo.svg';
-import jiraLight from '../static/images/employment/jira-logo-light.svg';
-import confluenceLight from '../static/images/employment/confluence-logo-light.svg';
 
 const homepage_card_style: React.CSSProperties = {
   //maxHeight: "50%",
@@ -49,13 +44,6 @@ function HomepageBody() {
                         I have worked at General Motors in Warren, MI, since 2021. I started with an operations focused Storage Automation team as a software developer, then moved to the development team for the GM internal cloud in 2022. 
                         I worked on various projects to drive more automation that reduced risk and increased efficiency, including creating APIs to automate service request processing, reconfiguring micorservices to run on Kubernetes, and creating a chatbot using GPT and Azure AI for developers.
                     </p>
-                    <div className="d-flex p-2 justify-content-center">
-                        <img src={azure} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
-                        <img src={k8s} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
-                        <img src={springLogo} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
-                        <img src={jiraLight} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
-                        <img src={confluenceLight} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
-                    </div> 
                     <a className="btn btn-outline-info" href="/employment" type="button">Learn More</a>
                 </div>
                 <div className="mt-3">
