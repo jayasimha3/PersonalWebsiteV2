@@ -11,26 +11,3 @@ jobs:
     with:
       deploy: false
       docker: false
-  changelog:
-    runs-on: github-actions-runner-self-hosted-k8s-pw
-    # needs: build # To force run after build
-    strategy:
-      matrix:
-        node-version: [20.x]
-    steps:
-      - name: Checkout Main
-        uses: actions/checkout@v4
-        with:
-          ref: "${{ github.event.pull_request.head.ref }}"
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install Dependencies
-        run: npm install
-      - name: Changelog P1
-        run: cat CHANGELOG.md
-      - name: Update Changelog
-        run: npm run version
-      - name: Changelog P2
-        run: cat CHANGELOG.md
