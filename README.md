@@ -10,7 +10,7 @@ Please note that as this is a portfolio like website, even though it is public, 
 
 The following technologies were used:
 
-- [React](https://github.com/facebook/react) - *Backend*
+- [React](https://github.com/facebook/react) - *Web App Framework*
 - [Create React App](https://github.com/facebook/create-react-app) - *Create Starter App*
 - [Bootstrap](https://github.com/twbs) - *UI Elements*
 - [auto-changelog](https://github.com/CookPete/auto-changelog) - *Generate Changelog*
@@ -35,6 +35,9 @@ The following describes development tools, such as `npm` scripts, how the websit
 ### Build
 
 1. Update dependencies if needed (`npm run update-dependencies`)
+2. Install dependencies (`npm install`)
+3. *For development* Start the live webserver (`npm run start`)
+4. *For production* Build the application (`npm run build`)
 
 #### Development Build
 
@@ -46,4 +49,4 @@ There are no unit tests at the moment, but these will be added after release.
 
 ### Deployment
 
-TODO: Add deployment instructions here.
+Deployment is handled through the [Deploy](./.github/workflows/deploy.yaml) GitHub Action workflow.
