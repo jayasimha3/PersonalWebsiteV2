@@ -89,6 +89,9 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Check for Tag, Specify if does not exist
+        if: "${{ env.TAG }} == ''"
+        run: echo "TAG=v2.1" >> $GITHUB_ENV
       - name: Extract Metadata for Docker
         id: meta
         uses: docker/metadata-action@v5
