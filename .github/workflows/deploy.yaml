@@ -67,7 +67,7 @@ jobs:
   docker:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
-    if: ${{ inputs.docker == true }} || ${{ github.event_name == pull_request }}
+    if: ${{ inputs.docker == true }} || github.event_name == pull_request
     permissions:
       contents: read
       packages: write
