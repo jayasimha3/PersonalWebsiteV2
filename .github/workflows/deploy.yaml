@@ -22,7 +22,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'src/**'
+      - 'src/*'
       - '**.json'
 
 env:
@@ -50,6 +50,8 @@ jobs:
       pages: write
       id-token: write
     steps:
+      - name: Trigger Type
+        run: "echo ${{ github.event.action }}"
       - name: Download Build
         uses: actions/download-artifact@v4
         with:
