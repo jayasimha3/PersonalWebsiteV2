@@ -37,7 +37,7 @@ jobs:
     with:
       deploy: false
       docker: true
-      tag: ${{ inputs.tag }}
+      tag: ${{ inputs.tag }} || "v2.1"
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
