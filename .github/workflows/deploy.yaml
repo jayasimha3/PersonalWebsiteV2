@@ -50,8 +50,6 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - name: Trigger Type
-        run: "echo ${{ github.event.action }}"
       - name: Download Build
         uses: actions/download-artifact@v4
         with:
@@ -76,6 +74,8 @@ jobs:
       attestations: write
       id-token: write
     steps:
+      - name: Trigger Type
+        run: "echo ${{ github.event.action }}"
       - name: Checkout Main
         uses: actions/checkout@v4
       - name: Download Build
