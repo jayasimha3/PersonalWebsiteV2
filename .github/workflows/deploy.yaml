@@ -41,7 +41,7 @@ jobs:
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
-    if: ${{ inputs.deploy == true }}
+    if: ${{ inputs.docker == true }} || ${{ github.event_name == pull_request }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -67,15 +67,13 @@ jobs:
   docker:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
-    if: ${{ inputs.docker == true }}
+    if: ${{ inputs.docker == true }} || ${{ github.event_name == pull_request }}
     permissions:
       contents: read
       packages: write
       attestations: write
       id-token: write
     steps:
-      - name: Trigger Type
-        run: "echo ${{ github.event.action }}"
       - name: Checkout Main
         uses: actions/checkout@v4
       - name: Download Build
