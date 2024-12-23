@@ -6,7 +6,7 @@ on:
       deploy:
         description: 'Deploy to Github Pages'
         required: true
-        default: false
+        default: true
         type: boolean
       docker:
         description: 'Build Docker Image'
@@ -16,7 +16,7 @@ on:
       tag:
         description: 'Release Tag, will be used by Docker if selected'
         required: false
-        default: "2.1"
+        default: "v2.1"
         type: string
   push:
     branches:
@@ -50,8 +50,6 @@ jobs:
       pages: write
       id-token: write
     steps:
-      # - name: Checkout Main
-      #   uses: actions/checkout@v4
       - name: Download Build
         uses: actions/download-artifact@v4
         with:
@@ -115,10 +113,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-      # Enable when repo is public
-      # - name: Generate artifact attestation
-      #   uses: actions/attest-build-provenance@v1
-      #   with:
-      #     subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
-      #     subject-digest: ${{ steps.push.outputs.digest }}
-      #     push-to-registry: true

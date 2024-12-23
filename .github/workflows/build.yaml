@@ -16,7 +16,7 @@ on:
       tag:
         description: 'Release Tag, will be used by Docker if selected'
         required: false
-        default: "2.1"
+        default: "v2.1"
         type: string
   workflow_call:
     inputs:
