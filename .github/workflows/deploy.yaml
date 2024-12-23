@@ -41,7 +41,7 @@ jobs:
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
-    if: ${{ inputs.docker == true }} || ${{ github.event_name == pull_request }}
+    if: ${{ inputs.docker == true }} || github.event_name == pull_request
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
