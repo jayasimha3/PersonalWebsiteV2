@@ -33,7 +33,7 @@ on:
       tag:
         description: 'Release Tag, will be used by Docker if selected'
         required: false
-        default: "2.1"
+        default: "v2.1"
         type: string
     outputs:
       tag:
@@ -65,7 +65,6 @@ jobs:
         run: npm run build
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
-        # if: ${{ env.UPLOAD_ARTIFACT == true }}
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: ./build
