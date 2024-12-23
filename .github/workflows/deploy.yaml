@@ -29,7 +29,7 @@ env:
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  TAG: ${{ inputs.tag }} || "v2.1"
+  TAG: ${{ inputs.tag }}
 
 jobs:
   build:
@@ -37,7 +37,7 @@ jobs:
     with:
       deploy: false
       docker: true
-      tag: ${{ inputs.tag }} || "v2.1"
+      tag: v2.1
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
