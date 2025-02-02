@@ -20,7 +20,8 @@ The following technologies were used:
 
 ## Development
 
-> NOTE: This repository is closed for public contributions as it's a personal website.
+> [!Note]
+> This repository is closed for public contributions as it's a personal website.
 
 The following describes development tools, such as `npm` scripts, how the website is built, how to use `auto-changelog`, and how the website is deployed.
 
