@@ -42,7 +42,7 @@ on:
 
 env:
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
-  REACT_APP_VERSION: ""
+  NEXT_PUBLIC_VERSION: ""
 
 jobs:
   build:
@@ -60,7 +60,7 @@ jobs:
       - name: Install Packages
         run: npm install
       - name: Set Version
-        run: echo "REACT_APP_VERSION=${{ inputs.tag }}" >> "$GITHUB_ENV"
+        run: echo "NEXT_PUBLIC_VERSION=${{ inputs.tag }}" >> "$GITHUB_ENV"
       - name: Build Application
         run: npm run build
       - name: Upload Artifact

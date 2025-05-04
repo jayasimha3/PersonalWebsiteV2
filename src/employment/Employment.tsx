@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css';
 import { links } from '../common/Constants'
-import gm from '../static/images/employment/generalmotors.svg';
-import ohio_state_stacked from '../static/images/ohiostate/ohiostate-stackedlogo.svg';
-import slu from '../static/images/slu/slu_logo.svg';
+import gm from '../../public/images/employment/generalmotors.svg';
+import ohio_state_stacked from '../../public/images/ohiostate/ohiostate-stackedlogo.svg';
+import slu from '../../public/images/slu/slu_logo.svg';
 
 function PreviousPositions() {
     return (
@@ -27,7 +27,7 @@ function PreviousPositions() {
                     <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={gm} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <img src={gm.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
                                 My current role includes various responsibilities. Before the Jira project listed above, I worked with AI/ML to make a chatbot for GM developers.
                                 This included:
                                 <ul className="list-group list-group-flush">
@@ -72,7 +72,7 @@ function PreviousPositions() {
                     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={gm} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <img src={gm.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
                                 As a cloud developer, I worked with infrastructure and microservices as part of GM's <i>Galileo</i> internal cloud. I worked with <i>Pivotal Cloud Foundry</i>, <i>Kubernetes</i>, and various pipelines for build and deployment.
                                 Some specific projects I woked on were:
                                 <ul className="list-group list-group-flush">
@@ -131,7 +131,7 @@ function PreviousPositions() {
                     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={gm} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <img src={gm.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
                                 As a storage engineer and software developer, I worked on automation relating to provisioning and monitoring storage devices, such as NAS, SAN, and Switch devices. 
                                 We used a Django python project to show tables for inventory and monitoring, pyhton UI pages with backend automations for provisioning, creating change records, alerting, and os patching, among other things.
                                 I lead the design of documentation for the website, and developed end-to-end api's to reduce manual tasks to improve simplicity and reduce human-error.
@@ -204,7 +204,7 @@ function PreviousPositions() {
                     <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={ohio_state_stacked} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <img src={ohio_state_stacked.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
                                 Graded homework and projects in software development with Java. Projects included implementing classes, and coding efficiently.
                                 Guided students in learning the importance of testing through test cases and taught them how to think about efficiency when writing code with the goal of improving code maintainability.
                             </div>                  
@@ -229,7 +229,7 @@ function PreviousPositions() {
                     <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={ohio_state_stacked} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <img src={ohio_state_stacked.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
                                 Performed customer service activities including logging packages/mail; issuing loaner keys, and issuing equipment.
                             </div>
                         </div>
@@ -253,7 +253,7 @@ function PreviousPositions() {
                     <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={slu} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <img src={slu.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
                                 Solved the problem of turning the <a href={ links.sluArgus }>ARGUS</a> satellite on and off remotely during testing, so testers would not have to enter the clean room.
                                 Built a remote on/off switch to power the satellite on and off using a solenoid and pen.
                                 This was an unpaid internship during High School.
@@ -359,7 +359,7 @@ function EmploymentBody() {
                 <br></br>
                 <div className="row">
                     <div className="col-2">
-                        <img src={gm} width="100%" alt="General Motors"></img>
+                        <img src={gm.src} width="100%" alt="General Motors"></img>
                     </div>
                     <div className="col-lg">
                         <h1 className="text-light">Software Engineer <span className="badge text-bg-secondary">Current</span></h1>

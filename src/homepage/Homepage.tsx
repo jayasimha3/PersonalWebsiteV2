@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css';
 import { rishee } from '../common/Constants';
-import headshot from '../static/images/me/jayasimharishee.jpg';
+import headshot from '../../public/images/me/jayasimharishee.jpg';
 
 const homepage_card_style: React.CSSProperties = {
   //maxHeight: "50%",
@@ -10,7 +10,7 @@ const homepage_card_style: React.CSSProperties = {
 
 function HomepageImage() {
     return (
-        <img src={headshot} className="img-fluid rounded mt-5" alt={rishee.name}></img>
+        <img src={headshot.src} className="img-fluid rounded mt-5" alt={rishee.name}></img>
     );
 }
 

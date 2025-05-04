@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css';
 import { Link } from 'react-router-dom'
-import linkedin from '../static/images/employment/linkedin-blue.png'
-import github from '../static/images/employment/github-white.svg'
+import linkedin from '../../public/images/employment/linkedin-blue.png'
+import github from '../../public/images/employment/github-white.svg'
 import { links } from './Constants'
 
 const navbarMode = 'navbar navbar-expand-lg bg-dark'; // dark mode, need to switch bg- to light for light mode
@@ -27,7 +27,7 @@ export function Navbar() {
           </div>
         </div>
         <a className="AppHeader-logo ml-2" href={links.websiteRepository} aria-label="Github Repository " data-turbo="false">
-          <img src={github} alt="" width="32" height="32" title="Repository"></img>
+          <img src={github.src} alt="" width="32" height="32" title="Repository"></img>
         </a>
         <button type="button" className="btn btn-primary btn-sm ms-3 me-3" data-bs-toggle="popover" data-bs-custom-class="custom-popover" data-bs-placement="bottom" data-bs-html="true" data-bs-content={"<a class='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' href='mailto:" + links.email + "'>Email</a>"}>
           Contact
@@ -44,15 +44,15 @@ export function Footer() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <a className="navbar-brand" href={links.githubProfile}>
-            <img src={github} alt="" width="32" height="32" title="Github"></img>
+            <img src={github.src} alt="" width="32" height="32" title="Github"></img>
           </a>
           <a className="navbar-brand" href={links.linkedin}>
-            <img src={linkedin} alt="" width="32" height="32" title="LinkedIn"></img>
+            <img src={linkedin.src} alt="" width="32" height="32" title="LinkedIn"></img>
           </a>
         </ul>
       </div>
       <span className="navbar-text text-end">
-            Rishee Jayasimha | <a className="font-monospace text-muted" href={links.websiteRepository + "/blob/main/CHANGELOG.md"}>{process.env.REACT_APP_VERSION}</a>
+            Rishee Jayasimha | <a className="font-monospace text-muted" href={links.websiteRepository + "/blob/main/CHANGELOG.md"}>{process.env.NEXT_PUBLIC_VERSION}</a>
             {/* process.env.REACT_APP_VERSION comes from the REACT_APP_VERSION environment variable. 
             For development, it is located in .env.development.
             In the CI pipeline, environment variables through the shell will be used. */}

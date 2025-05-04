@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css'
 import { links } from '../common/Constants';
-import kitchen_assistant_readme from '../static/files/projects/KitchenAssistantReadme.md'
-import ml_report from '../static/files/projects/FinalReport_MLProject.pdf'
+import kitchen_assistant_readme from '../../public/files/projects/KitchenAssistantReadme.md'
+import ml_report from '../../public/files/projects/FinalReport_MLProject.pdf'
 
 function ProjectsBody() {
     return (
