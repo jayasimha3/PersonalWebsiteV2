@@ -11,12 +11,16 @@ Please note that as this is a portfolio like website, even though it is public, 
 The following technologies were used:
 
 - [React](https://github.com/facebook/react) - *Web App Framework*
-- [Create React App](https://github.com/facebook/create-react-app) - *Create Starter App*
 - [Bootstrap](https://github.com/twbs) - *UI Elements*
 - [auto-changelog](https://github.com/CookPete/auto-changelog) - *Generate Changelog*
 - [NPM](https://github.com/npm) - *Package Manager*
 - [GitHub Pages](https://pages.github.com/) - *Hosting*
 - [Cloudflare](https://www.cloudflare.com/) - *Custom Domain*
+- [next.js](https://github.com/vercel/next.js) - *React Framework, replaces Create React App*
+
+The following was used in the initial React redesign, but is now deprecated and replaced with *next.js*:
+
+- [Create React App](https://github.com/facebook/create-react-app) - *Create Starter App*
 
 ## Development
 
