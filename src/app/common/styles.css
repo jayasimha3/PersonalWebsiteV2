@@ -1,0 +1,14 @@
+.flex {
+    display: flex;
+  }
+  
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
