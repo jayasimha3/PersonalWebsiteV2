@@ -2,23 +2,38 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css';
 import Link from 'next/link'
+import Image from 'next/image';
 import linkedin from '../../../public/images/employment/linkedin-blue.png'
 import github from '../../../public/images/employment/github-white.svg'
 import { links } from './Constants'
 import { useState, useEffect } from 'react';
-import { Popover } from "bootstrap";
+//import { Popover } from "bootstrap";
+// import * as bootstrap from "bootstrap";
 
 const navbarMode = 'navbar navbar-expand-lg bg-dark'; // dark mode, need to switch bg- to light for light mode
 const footerMode = 'navbar navbar-expand bg-dark sticky-bottom'; // dark mode, need to switch bg- to light for light mode
 
 export function Navbar() {
-    const [popovers, setPopovers] = useState([]);
+  const [popovers, setPopovers] = useState<any[]>([]); // eslint-disable-line @typescript-eslint/no-unused-vars,@typescript-eslint/no-explicit-any
 
-    useEffect(() => {
-      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new Popover(popoverTriggerEl));
+  useEffect(() => {
+    // Only run this in the browser
+    import('bootstrap').then(({ Popover }) => {
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map(
+        popoverTriggerEl => new Popover(popoverTriggerEl)
+      );
       setPopovers(popoverList);
-    }, []);
+    });
+  }, []);
+
+    // const [popovers, setPopovers] = useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars,@typescript-eslint/no-explicit-any
+
+    // useEffect(() => {
+    //   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    //   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new Popover(popoverTriggerEl));
+    //   setPopovers(popoverList);
+    // }, []);
     
     return (
       <nav className={ navbarMode } data-bs-theme="dark">
@@ -38,7 +53,7 @@ export function Navbar() {
           </div>
         </div>
         <a className="AppHeader-logo ml-2" href={links.websiteRepository} aria-label="Github Repository " data-turbo="false">
-          <img src={github.src} alt="" width="32" height="32" title="Repository"></img>
+          <Image src={github.src} alt="" width="32" height="32" title="Repository"></Image>
         </a>
         <button type="button" className="btn btn-primary btn-sm ms-3 me-3" data-bs-toggle="popover" data-bs-custom-class="custom-popover" data-bs-placement="bottom" data-bs-html="true" data-bs-content={"<a class='link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' href='mailto:" + links.email + "'>Email</a>"}>
           Contact
@@ -55,10 +70,10 @@ export function Footer() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <a className="navbar-brand" href={links.githubProfile}>
-            <img src={github.src} alt="" width="32" height="32" title="Github"></img>
+            <Image src={github.src} alt="" width="32" height="32" title="Github"></Image>
           </a>
           <a className="navbar-brand" href={links.linkedin}>
-            <img src={linkedin.src} alt="" width="32" height="32" title="LinkedIn"></img>
+            <Image src={linkedin.src} alt="" width="32" height="32" title="LinkedIn"></Image>
           </a>
         </ul>
       </div>

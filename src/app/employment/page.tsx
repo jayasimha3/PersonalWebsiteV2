@@ -1,5 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css';
+import './page.css';
+import Image from 'next/image';
+import Link from 'next/link'
 import { links } from '../common/Constants'
 import gm from '../../../public/images/employment/generalmotors.svg';
 import ohio_state_stacked from '../../../public/images/ohiostate/ohiostate-stackedlogo.svg';
@@ -27,14 +30,14 @@ function PreviousPositions() {
                     <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={gm.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <Image src={gm.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></Image>
                                 My current role includes various responsibilities. Before the Jira project listed above, I worked with AI/ML to make a chatbot for GM developers.
                                 This included:
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">AzureAI Chatbot</div>
-                                            Created a chatbot based on Microsoft's Azure OpenAI RAG <a href={ links.azChatbotDemo }>Chatbot demo app</a>.
+                                            Created a chatbot based on Microsoft's Azure OpenAI RAG <Link href={ links.azChatbotDemo }>Chatbot demo app</Link>.
                                             The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
                                             Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
                                         </div>
@@ -45,7 +48,7 @@ function PreviousPositions() {
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">Response Evaluation</div>
                                             Lead the research of evaluation tools that can be used to evaluate RAG model responses.
-                                            Researched <a href={ links.elutherGithub }>EleutherAI's Evaluation Harness</a>, <a href={ links.stanfordHelmGithub }>Stanford's HELM</a>, and <a href={ links.azRagEvalGithub }>Azure's RAG Evaluator</a>.
+                                            Researched <Link href={ links.elutherGithub }>EleutherAI's Evaluation Harness</Link>, <Link href={ links.stanfordHelmGithub }>Stanford's HELM</Link>, and <Link href={ links.azRagEvalGithub }>Azure's RAG Evaluator</Link>.
                                             Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
                                         </div>
                                     </li>
@@ -72,7 +75,7 @@ function PreviousPositions() {
                     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={gm.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <Image src={gm.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></Image>
                                 As a cloud developer, I worked with infrastructure and microservices as part of GM's <i>Galileo</i> internal cloud. I worked with <i>Pivotal Cloud Foundry</i>, <i>Kubernetes</i>, and various pipelines for build and deployment.
                                 Some specific projects I woked on were:
                                 <ul className="list-group list-group-flush">
@@ -131,7 +134,7 @@ function PreviousPositions() {
                     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={gm.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <Image src={gm.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></Image>
                                 As a storage engineer and software developer, I worked on automation relating to provisioning and monitoring storage devices, such as NAS, SAN, and Switch devices. 
                                 We used a Django python project to show tables for inventory and monitoring, pyhton UI pages with backend automations for provisioning, creating change records, alerting, and os patching, among other things.
                                 I lead the design of documentation for the website, and developed end-to-end api's to reduce manual tasks to improve simplicity and reduce human-error.
@@ -160,7 +163,7 @@ function PreviousPositions() {
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
-                                            <div className="fw-bold">DELL EMC <a href={ links.powerflex }>PowerFlex</a></div>
+                                            <div className="fw-bold">DELL EMC <Link href={ links.powerflex }>PowerFlex</Link></div>
                                             SAN Cluster based on all flash storage.
                                         </div>
                                     </li>
@@ -168,7 +171,7 @@ function PreviousPositions() {
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
-                                            <div className="fw-bold">DELL EMC <a href={ links.xtremio }>Xtremio</a></div>
+                                            <div className="fw-bold">DELL EMC <Link href={ links.xtremio }>Xtremio</Link></div>
                                             SAN Cluster based on all flash storage.
                                         </div>
                                     </li>
@@ -177,8 +180,8 @@ function PreviousPositions() {
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">Other Storage Devices</div>
-                                            Dell EMC <a href={ links.isilon }>Isilon</a>, HPE <a href={ links.threePar }>3Par</a>,
-                                            Brocade and Cisco Switches, <a href={ links.netapp }>Netapp</a>, <a href={ links.datadomain }>Datadomain</a>, and more.
+                                            Dell EMC <Link href={ links.isilon }>Isilon</Link>, HPE <Link href={ links.threePar }>3Par</Link>,
+                                            Brocade and Cisco Switches, <Link href={ links.netapp }>Netapp</Link>, <Link href={ links.datadomain }>Datadomain</Link>, and more.
                                         </div>
                                     </li>
                                 </ul> 
@@ -204,7 +207,7 @@ function PreviousPositions() {
                     <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={ohio_state_stacked.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <Image src={ohio_state_stacked.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="Ohio State Logo"></Image>
                                 Graded homework and projects in software development with Java. Projects included implementing classes, and coding efficiently.
                                 Guided students in learning the importance of testing through test cases and taught them how to think about efficiency when writing code with the goal of improving code maintainability.
                             </div>                  
@@ -229,7 +232,7 @@ function PreviousPositions() {
                     <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={ohio_state_stacked.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
+                                <Image src={ohio_state_stacked.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="Ohio State Logo"></Image>
                                 Performed customer service activities including logging packages/mail; issuing loaner keys, and issuing equipment.
                             </div>
                         </div>
@@ -253,8 +256,8 @@ function PreviousPositions() {
                     <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
-                                <img src={slu.src} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></img>
-                                Solved the problem of turning the <a href={ links.sluArgus }>ARGUS</a> satellite on and off remotely during testing, so testers would not have to enter the clean room.
+                                <Image src={slu.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="SLU Logo"></Image>
+                                Solved the problem of turning the <Link href={ links.sluArgus }>ARGUS</Link> satellite on and off remotely during testing, so testers would not have to enter the clean room.
                                 Built a remote on/off switch to power the satellite on and off using a solenoid and pen.
                                 This was an unpaid internship during High School.
                             </div>
@@ -281,7 +284,7 @@ function CurrentEmploymentDescription() {
                 <li className="list-group-item d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
                         <div className="fw-bold">End-to-End Automations using LLM's</div>
-                        Leading the development of "Bi-directional" approaches, which allow for a user to ask the chatbot to take action. Currently utilizing both <a href={ links.langchainAgents }>Langchain Agents</a> (for both GPT and Open Source Models) and <a href={ links.openAiFunctions }>OpenAI Functions</a> (only compatible with GPT).
+                        Leading the development of "Bi-directional" approaches, which allow for a user to ask the chatbot to take action. Currently utilizing both <Link href={ links.langchainAgents }>Langchain Agents</Link> (for both GPT and Open Source Models) and <Link href={ links.openAiFunctions }>OpenAI Functions</Link> (only compatible with GPT).
                         This kind of approach would allow the chatbot to "do something"; for example, if a user wants the chatbot to "send an email", the chatbot can take action to send that email using this bi-directional approach.
                         Some projects I'm working on include writing or updating documentation during pull requests for new code, writing readme files based on the contents of a repository, and being able to generate requirements if existing requirements are not detailed enough.
                     </div>
@@ -359,7 +362,7 @@ export default function EmploymentBody() {
                 <br></br>
                 <div className="row">
                     <div className="col-2">
-                        <img src={gm.src} width="100%" alt="General Motors"></img>
+                        <Image src={gm.src} width={100} height={100} layout="responsive" alt="General Motors"></Image>
                     </div>
                     <div className="col-lg">
                         <h1 className="text-light">Software Engineer <span className="badge text-bg-secondary">Current</span></h1>
