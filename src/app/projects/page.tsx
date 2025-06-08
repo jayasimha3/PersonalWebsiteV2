@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../common/styles.css'
+import './page.css';
 import { links } from '../common/Constants';
 import Link from 'next/link'
 
@@ -17,7 +18,7 @@ export default function ProjectsBody() {
                     <li className="list-group-item d-flex justify-content-between align-items-start">
                         <div className="ms-2 me-auto">
                             <div className="fw-bold">AzureAI Chatbot <span className="badge text-bg-primary">GM</span></div>
-                            Created a chatbot based on Microsoft's Azure OpenAI RAG <a href={ links.azChatbotDemo }>Chatbot demo app</a>.
+                            Created a chatbot based on Microsoft's Azure OpenAI RAG <Link href={ links.azChatbotDemo }>Chatbot demo app</Link>.
                             The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
                             Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
                         </div>
@@ -25,11 +26,11 @@ export default function ProjectsBody() {
                     <li className="list-group-item d-flex justify-content-between align-items-start">
                         <div className="ms-2 me-auto">
                             <div className="fw-bold">Personal Website <span className="badge text-bg-secondary">Personal</span></div>
-                            Created <a href="/">this website</a> to showcase my work, skills and experiences. This project was first done in 2020 during the COVID pandemic as a way to enhance my web development skills.
+                            Created <Link href="/">this website</Link> to showcase my work, skills and experiences. This project was first done in 2020 during the COVID pandemic as a way to enhance my web development skills.
                             At the time, it was built using the Angular framework, and in 2023-2024, the website was converted to use React with Typescript, and hosted using Github pages.
                             <br></br>
-                            <a className="btn btn-outline-secondary btn-sm me-2 mt-2" href={ links.websiteRepositoryV1 } role="button">Version 1 Repository</a>
-                            <a className="btn btn-outline-secondary btn-sm mt-2" href={ links.websiteRepository } role="button">Current Version Repository</a>
+                            <Link className="btn btn-outline-secondary btn-sm me-2 mt-2" href={ links.websiteRepositoryV1 } role="button">Version 1 Repository</Link>
+                            <Link className="btn btn-outline-secondary btn-sm mt-2" href={ links.websiteRepository } role="button">Current Version Repository</Link>
                         </div>
                     </li>
                 </ul>
@@ -71,13 +72,13 @@ function Projects() {
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Jira Custom Issue Tracker <span className="badge text-bg-primary">GM</span></div>
                                     Developing a custom issue tracking solution within Jira. This includes othr Jira instacnes being able to create and modify issues, custom plugins for data structures, and workflows and workflow automations.
-                                    Plugins are built using <a href="https://developer.atlassian.com/platform/forge/">Atlassian Forge</a>, with React. This is the first of it's kind of application made within GM, and sets the standard for all future applications that become Jira plugins.
+                                    Plugins are built using <Link href="https://developer.atlassian.com/platform/forge/">Atlassian Forge</Link>, with React. This is the first of it's kind of application made within GM, and sets the standard for all future applications that become Jira plugins.
                                     </div>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">AzureAI Chatbot <span className="badge text-bg-primary">GM</span></div>
-                                    Created a chatbot based on Microsoft's Azure OpenAI RAG <a href={ links.azChatbotDemo }>Chatbot demo app</a>.
+                                    Created a chatbot based on Microsoft's Azure OpenAI RAG <Link href={ links.azChatbotDemo }>Chatbot demo app</Link>.
                                     The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
                                     Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
                                 </div>
@@ -86,7 +87,7 @@ function Projects() {
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Chatbot Response Evaluation <span className="badge text-bg-primary">GM</span></div>
                                     Lead the research of evaluation tools that can be used to evaluate RAG model responses.
-                                    Researched <a href={ links.elutherGithub }>EleutherAI's Evaluation Harness</a>, <a href={ links.stanfordHelmGithub }>Stanford's HELM</a>, and <a href={ links.azRagEvalGithub }>Azure's RAG Evaluator</a>.
+                                    Researched <Link href={ links.elutherGithub }>EleutherAI's Evaluation Harness</Link>, <Link href={ links.stanfordHelmGithub }>Stanford's HELM</Link>, and <Link href={ links.azRagEvalGithub }>Azure's RAG Evaluator</Link>.
                                             Customized EleutherAI's harness to query Azure AI search to get the context, and then feed that back to the model, like what's done in the chatbot. Was able to make this work with on-prem models as well.
                                 </div>
                             </li>
@@ -111,14 +112,14 @@ function Projects() {
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Xtremio Hardware Replacement Automation <span className="badge text-bg-primary">GM</span></div>
-                                    Developed an end-to-end module using UI and REST APIs that reduced manual and hands-on tasks by about 2 hours per request for DELL's <a href={ links.xtremio }>Xtremio</a> storage platform. 
+                                    Developed an end-to-end module using UI and REST APIs that reduced manual and hands-on tasks by about 2 hours per request for DELL's <Link href={ links.xtremio }>Xtremio</Link> storage platform. 
                                     It obtained data and created a change report automatically, reducing human induced risk to the environment. As of 2022, this tool is widely used and saves a significant amount of time overall.
                                 </div>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Manufacturing Decommissioning Pre-Checks <span className="badge text-bg-primary">GM</span></div>
-                                    Script to automate gathering information on Decommissioning hostsets in GM's manufacturing environments. This utility page generated a script to run on the <a href={ links.threePar }>3par hosts</a>, and was a simpler version of a script generator that was widely used at the time. 
+                                    Script to automate gathering information on Decommissioning hostsets in GM's manufacturing environments. This utility page generated a script to run on the <Link href={ links.threePar }>3par hosts</Link>, and was a simpler version of a script generator that was widely used at the time. 
                                     This reduced execution time by about 1 hour per request.
                                 </div>
                             </li>
@@ -151,9 +152,9 @@ function Projects() {
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Homelab/Self Hosted Kubernetes Cluster <span className="badge text-bg-secondary">Personal</span></div>
-                                    Deployed a Kubernetes cluster at home, using <a href="https://www.talos.dev/">Talos Linux</a> on Proxmox. This cluster was built to further my understanding of microservices, networking, and hosting.
-                                    As a result, I have gained or furthered networking experience, AI experience, NAS/Storage experience, and automation experience. Documentation is hosted through an nginx container running a docusaurus website, built upon PR completion to a self-hosted <a href={ links.forgejo }>Forgejo</a> repository.
-                                    Cluster updates (to Kubernetes and Talos) will be handled through Ansible playbooks, and service deployments are handled using <a href={ links.fluxcd }>FluxCD</a> linked to a Github repository.
+                                    Deployed a Kubernetes cluster at home, using <Link href="https://www.talos.dev/">Talos Linux</Link> on Proxmox. This cluster was built to further my understanding of microservices, networking, and hosting.
+                                    As a result, I have gained or furthered networking experience, AI experience, NAS/Storage experience, and automation experience. Documentation is hosted through an nginx container running a docusaurus website, built upon PR completion to a self-hosted <Link href={ links.forgejo }>Forgejo</Link> repository.
+                                    Cluster updates (to Kubernetes and Talos) will be handled through Ansible playbooks, and service deployments are handled using <Link href={ links.fluxcd }>FluxCD</Link> linked to a Github repository.
                                     Some services or operating systems I host are listed below.
                                     <br></br>
                                     <div className="btn-group mt-2 disabled" role="group" aria-label="Self Hosted Applications">
@@ -299,7 +300,7 @@ function Projects() {
                                         <div className="ms-2 me-auto">
                                             <div className="fw-bold">Saint Louis University ARGUS Satellite <span className="badge text-bg-info">Internship</span></div>
                                             During High School, as part of a district wide initiative to give students internship experience, I joined the Space Systems Research 
-                                            Lab at Saint Louis University to help develop their <a href={ links.sluArgus }>ARGUS</a> cubesat. My task was to 
+                                            Lab at Saint Louis University to help develop their <Link href={ links.sluArgus }>ARGUS</Link> cubesat. My task was to 
                                             create remote on/off switch so that the developers would not need to enter and exit the clean room during every test. Using a solenoid 
                                             and a pen, I built a device that could turn the cubesat on or off with the push of a button.
                                         </div>

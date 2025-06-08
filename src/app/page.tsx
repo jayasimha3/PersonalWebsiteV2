@@ -11,7 +11,7 @@ const homepage_card_style: React.CSSProperties = {
 
 function HomepageImage() {
     return (
-        <img src={headshot.src} className="img-fluid rounded mt-5" alt={rishee.name}></img>
+        <img src={headshot.src} className="img-fluid rounded mt-5" alt={rishee.name}></img> // eslint-disable-line @next/next/no-img-element
     );
 }
 
