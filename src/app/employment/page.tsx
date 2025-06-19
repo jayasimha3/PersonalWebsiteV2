@@ -40,7 +40,7 @@ function PreviousPositions() {
                                             <ul>
                                                 <li>Send issues between two different Jira sites on the click of a button</li>
                                                 <li>Creation of multiple issues via Jira automation</li>
-                                                <li>Use of the <Link href="https://developer.atlassian.com/platform/forge/">Atlassian Forge</Link> platform to obtain data from a databricks instance and allow users to pick in a cascading, table, or combined formats</li>
+                                                <li>Use of the <Link href={links.atlassianForge}>Atlassian Forge</Link> platform to obtain data from a databricks instance and allow users to pick in a cascading, table, or combined formats</li>
                                                 <li>Integration with other on-premises systems so they create issues on PRTS Jira and can track the status of that issue</li>
                                             </ul>
                                             Some other more administrative functions performed include:

@@ -25,6 +25,14 @@ export default function ProjectsBody() {
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-start">
                         <div className="ms-2 me-auto">
+                            <div className="fw-bold">GM Product Reporting and Tracking System <span className="badge text-bg-primary">GM</span></div>
+                            Recreate an on-premises problem tracking system for vehicles to Jira.
+                            This application tracks defects on pre-production and in-production vehicles, allowing GM employees to track and fix those defects. In order to better integrate with the broader software community at GM, this application is being integrated into Jira.
+                            The scope of this project includes a full replacement of the on-premises system, including workflows to move issues through different stages, approvals, scripts for automated functionality, sending issues between different Jira sites. integration with on-premises systems, and more.
+                        </div>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-start">
+                        <div className="ms-2 me-auto">
                             <div className="fw-bold">Personal Website <span className="badge text-bg-secondary">Personal</span></div>
                             Created <Link href="/">this website</Link> to showcase my work, skills and experiences. This project was first done in 2020 during the COVID pandemic as a way to enhance my web development skills.
                             At the time, it was built using the Angular framework, and in 2023-2024, the website was converted to use React with Typescript, and hosted using Github pages.
@@ -70,9 +78,9 @@ function Projects() {
                         <ul className="list-group list-group-flush">
                         <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
-                                    <div className="fw-bold">Jira Custom Issue Tracker <span className="badge text-bg-primary">GM</span></div>
+                                    <div className="fw-bold">GM Product Reporting and Tracking System <span className="badge text-bg-primary">GM</span></div>
                                     Developing a custom issue tracking solution within Jira. This includes othr Jira instacnes being able to create and modify issues, custom plugins for data structures, and workflows and workflow automations.
-                                    Plugins are built using <Link href="https://developer.atlassian.com/platform/forge/">Atlassian Forge</Link>, with React. This is the first of it's kind of application made within GM, and sets the standard for all future applications that become Jira plugins.
+                                    Plugins are built using <Link href={links.atlassianForge}>Atlassian Forge</Link>, with React. This is the first of it's kind of application made within GM, and sets the standard for all future applications that become Jira plugins.
                                     </div>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
