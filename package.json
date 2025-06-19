@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "update-dependencies": "npm update --save/--save-dev",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "version": "auto-changelog -p"
   },
   "dependencies": {
     "react": "^19.0.0",

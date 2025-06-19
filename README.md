@@ -11,12 +11,16 @@ Please note that as this is a portfolio like website, even though it is public, 
 The following technologies were used:
 
 - [React](https://github.com/facebook/react) - *Web App Framework*
-- [Create React App](https://github.com/facebook/create-react-app) - *Create Starter App*
 - [Bootstrap](https://github.com/twbs) - *UI Elements*
 - [auto-changelog](https://github.com/CookPete/auto-changelog) - *Generate Changelog*
 - [NPM](https://github.com/npm) - *Package Manager*
 - [GitHub Pages](https://pages.github.com/) - *Hosting*
 - [Cloudflare](https://www.cloudflare.com/) - *Custom Domain*
+- [next.js](https://github.com/vercel/next.js) - *React Framework, replaces Create React App*
+
+The following was used in the initial React redesign, but is now deprecated and replaced with *next.js*:
+
+- [Create React App](https://github.com/facebook/create-react-app) - *Create Starter App*
 
 ## Development
 
@@ -27,22 +31,23 @@ The following describes development tools, such as `npm` scripts, how the websit
 
 ### Scripts
 
-- `npm run start`: Equivalent to `react-scripts start`, and **starts a local webserver** for development.
-- `npm run build`: Equivalent to `react-scripts build`, and **builds the app for production** to the `build` folder.
-- `npm run test`: Equivalent to `react-scripts test`, and **launches the test runner** for unit tests.
+- `npm run start`: Equivalent to `next start`.
+- `npm run build`: Equivalent to `react-scripts build`, and **builds the app for production** to the `out` folder.
 - `npm run update-dependencies`: Equivalent to `npm update --save/--save-dev`, and **updates all dependencies** to their latest versions.
-- `npm run version`: Runs `auto-changelog -p && git add CHANGELOG.md` for **generating a changelog**.
+- `npm run version`: Runs `auto-changelog -p` for **generating a changelog**.
+- `npm run dev`: Equivalent to `next dev --turbopack`, and starts a live webserver for development.
+- `npm run lint`: Equivalent to `next lint`, and runs the linting service to find errors in the application. This is run by default during build.
 
 ### Build
 
 1. Update dependencies if needed (`npm run update-dependencies`)
 2. Install dependencies (`npm install`)
-3. *For development* Start the live webserver (`npm run start`)
+3. *For development* Start the live webserver (`npm run dev`)
 4. *For production* Build the application (`npm run build`)
 
 #### Development Build
 
-To build a live development version of your app for testing and debugging, run `npm run start` and navigate to http://localhost:3000.
+To build a live development version of your app for testing and debugging, run `npm run dev` and navigate to http://localhost:3000.
 
 ### Tests
 
@@ -50,4 +55,4 @@ There are no unit tests at the moment, but these will be added after release.
 
 ### Deployment
 
-Deployment is handled through the [Deploy](./.github/workflows/deploy.yaml) GitHub Action workflow.
+Deployment is handled through the [Deploy](./.github/workflows/deploy.yaml) GitHub Action workflow. It deployes a github pages deployment and a private docker image.
