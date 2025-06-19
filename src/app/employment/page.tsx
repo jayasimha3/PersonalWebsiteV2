@@ -14,25 +14,67 @@ function PreviousPositions() {
             <div className="accordion" id="accordionPreviousPositions">
             <div className="accordion-item">
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGmDesignTools" aria-expanded="false" aria-controls="collapseGmDesignTools">
                     <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
-                                    AI Developer/Design Tools, <b>General Motors</b>
+                                    Design Tools, <b>General Motors</b>
                                 </div>
                                 <div className="col-2 position-absolute end-0 top-50 translate-middle-y">
-                                    <span className="badge text-bg-info">Sept 2023 - Present</span>
+                                    <span className="badge text-bg-info">May 2024 - Present</span>
                                 </div>
                             </div>
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseGmDesignTools" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <Image src={gm.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></Image>
-                                My current role includes various responsibilities. Before the Jira project listed above, I worked with AI/ML to make a chatbot for GM developers.
-                                This included:
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item d-flex justify-content-between align-items-start">
+                                        <div className="ms-2 me-auto">
+                                            <div className="fw-bold">PRTS Redevelopment</div>
+                                            GM's Problem and Resolution Tracking Service is being redeveloped into a Jira application. This system tracks vehicle defects in current and future vehicles.
+                                            The current on-premises application does not integrate well with the software teams in GM; the application is being redeveloped in Jira to address this. Some specific implementations in this project include:
+                                            <ul>
+                                                <li>Send issues between two different Jira sites on the click of a button</li>
+                                                <li>Creation of multiple issues via Jira automation</li>
+                                                <li>Use of the <Link href="https://developer.atlassian.com/platform/forge/">Atlassian Forge</Link> platform to obtain data from a databricks instance and allow users to pick in a cascading, table, or combined formats</li>
+                                                <li>Integration with other on-premises systems so they create issues on PRTS Jira and can track the status of that issue</li>
+                                            </ul>
+                                            Some other more administrative functions performed include:
+                                            <ul>
+                                                <li>Github Repository automation and workflows for deploying Forge applications to Jira</li>
+                                                <li>Leading documentation efforts</li>
+                                            </ul>
+                                            This project continues as of July 2025 to fully redevelop the on-premises application into a Jira Cloud application.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>                 
+                        </div>
+                    </div>
+                </div>
+            <div className="accordion-item">
+                    <h2 className="accordion-header">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGmAiEngineer" aria-expanded="false" aria-controls="collapseGmAiEngineer">
+                    <div className="container-lg">
+                            <div className="row">
+                                <div className="col-lg">
+                                    AI Engineer, <b>General Motors</b>
+                                </div>
+                                <div className="col-2 position-absolute end-0 top-50 translate-middle-y">
+                                    <span className="badge text-bg-info">Sept 2023 - May 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    </h2>
+                    <div id="collapseGmAiEngineer" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                        <div className="accordion-body">
+                            <div className="clearfix">
+                                <Image src={gm.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></Image>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item d-flex justify-content-between align-items-start">
                                         <div className="ms-2 me-auto">
@@ -53,13 +95,23 @@ function PreviousPositions() {
                                         </div>
                                     </li>
                                 </ul>
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item d-flex justify-content-between align-items-start">
+                                        <div className="ms-2 me-auto">
+                                            <div className="fw-bold">End-to-End Automations using LLM's</div>
+                                            Leading the development of "Bi-directional" approaches, which allow for a user to ask the chatbot to take action. Currently utilizing both <Link href={ links.langchainAgents }>Langchain Agents</Link> (for both GPT and Open Source Models) and <Link href={ links.openAiFunctions }>OpenAI Functions</Link> (only compatible with GPT).
+                                            This kind of approach would allow the chatbot to "do something"; for example, if a user wants the chatbot to "send an email", the chatbot can take action to send that email using this bi-directional approach.
+                                            Some projects I'm working on include writing or updating documentation during pull requests for new code, writing readme files based on the contents of a repository, and being able to generate requirements if existing requirements are not detailed enough.
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>                 
                         </div>
                     </div>
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGmCloudDeveloper" aria-expanded="false" aria-controls="collapseGmCloudDeveloper">
                     <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
@@ -72,7 +124,7 @@ function PreviousPositions() {
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseGmCloudDeveloper" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <Image src={gm.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></Image>
@@ -118,7 +170,7 @@ function PreviousPositions() {
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGmStorageOperations" aria-expanded="false" aria-controls="collapseGmStorageOperations">
                     <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
@@ -131,7 +183,7 @@ function PreviousPositions() {
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseGmStorageOperations" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <Image src={gm.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="General Motors Logo"></Image>
@@ -191,7 +243,7 @@ function PreviousPositions() {
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOsuCse" aria-expanded="false" aria-controls="collapseOsuCse">
                     <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
@@ -204,7 +256,7 @@ function PreviousPositions() {
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseOsuCse" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <Image src={ohio_state_stacked.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="Ohio State Logo"></Image>
@@ -216,7 +268,7 @@ function PreviousPositions() {
                 </div>
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOsuStudentLife" aria-expanded="false" aria-controls="collapseOsuStudentLife">
                     <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
@@ -229,7 +281,7 @@ function PreviousPositions() {
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseOsuStudentLife" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <Image src={ohio_state_stacked.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="Ohio State Logo"></Image>
@@ -240,7 +292,7 @@ function PreviousPositions() {
                 </div>
                 <div className="accordion-item position-relative">
                     <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSluArgus" aria-expanded="false" aria-controls="collapseSluArgus">
                         <div className="container-lg">
                             <div className="row">
                                 <div className="col-lg">
@@ -253,7 +305,7 @@ function PreviousPositions() {
                         </div>
                     </button>
                     </h2>
-                    <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
+                    <div id="collapseSluArgus" className="accordion-collapse collapse" data-bs-parent="#accordionPreviousPositions">
                         <div className="accordion-body">
                             <div className="clearfix">
                                 <Image src={slu.src} width={100} height={100} className="rounded float-start col-md-1 p-3" alt="SLU Logo"></Image>
@@ -276,17 +328,10 @@ function CurrentEmploymentDescription() {
             <ul className="list-group list-group-flush">
                 <li className="list-group-item d-flex justify-content-between align-items-start">
                     <div className="ms-2 me-auto">
-                        <div className="fw-bold">Develop a Issue Tracking Solution for GM within Atlassian Jira</div>
-                        Currently GM uses a self-hosted solution for tracking issues with vehicles. In order to better integrate with other teams, we're moving this solution to Jira cloud.
-                        Within scope are reporting for issues in various stages, using workflows to allow or reject moving between stages, approvals to move or mark done, API integration with other GM systems, not necessarily housed within Jira, and creating Jira plugins to facilitated data structures not shipped "in-the-box" with Jira cloud.
-                    </div>
-                </li>
-                <li className="list-group-item d-flex justify-content-between align-items-start">
-                    <div className="ms-2 me-auto">
-                        <div className="fw-bold">End-to-End Automations using LLM's</div>
-                        Leading the development of "Bi-directional" approaches, which allow for a user to ask the chatbot to take action. Currently utilizing both <Link href={ links.langchainAgents }>Langchain Agents</Link> (for both GPT and Open Source Models) and <Link href={ links.openAiFunctions }>OpenAI Functions</Link> (only compatible with GPT).
-                        This kind of approach would allow the chatbot to "do something"; for example, if a user wants the chatbot to "send an email", the chatbot can take action to send that email using this bi-directional approach.
-                        Some projects I'm working on include writing or updating documentation during pull requests for new code, writing readme files based on the contents of a repository, and being able to generate requirements if existing requirements are not detailed enough.
+                        <div className="fw-bold">Develop a Defect Tracking Solution for GM within Atlassian Jira</div>
+                        Recreate an on-premises problem tracking system for vehicles to Jira.
+                        This application tracks defects on pre-production and in-production vehicles, allowing GM employees to track and fix those defects. In order to better integrate with the broader software community at GM, this application is being integrated into Jira.
+                        The scope of this project includes a full replacement of the on-premises system, including workflows to move issues through different stages, approvals, scripts for automated functionality, sending issues between different Jira sites. integration with on-premises systems, and more.
                     </div>
                 </li>
             </ul>
@@ -305,7 +350,7 @@ function SkillsList() {
                             <tr>
                                 <th scope="col">Development</th>
                                 <th scope="col">Infrastructure</th>
-                                <th scope="col">Concepts</th>
+                                <th scope="col">AI</th>
                                 <th scope="col">Other</th>
                             </tr>
                         </thead>
@@ -317,28 +362,40 @@ function SkillsList() {
                                 <td>Github Integrations</td>
                             </tr>
                             <tr>
-                                <td>Django Framework</td>
+                                <td>Atlassian Forge</td>
                                 <td>Azure</td>
                                 <td>Retrieval Augmented Generation (RAG)</td>
                                 <td>PostgreSQL</td>
                             </tr>
                             <tr>
-                                <td>Java</td>
+                                <td>Django Framework</td>
                                 <td>Docker</td>
-                                <td></td>
+                                <td>Tool Calling/Functions</td>
                                 <td>Redis</td>
                             </tr>
                             <tr>
-                                <td>Python</td>
+                                <td>Java</td>
                                 <td>Kubernetes</td>
                                 <td></td>
                                 <td>Jira</td>
                             </tr>
                             <tr>
-                                <td>React</td>
+                                <td>Next.js</td>
                                 <td></td>
                                 <td></td>
                                 <td>Confluence</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>React</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td>Spring Framework</td>
