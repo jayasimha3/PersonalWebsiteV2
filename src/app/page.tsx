@@ -17,7 +17,6 @@ function HomepageImage() {
 
 export default function HomepageBody() {
     return (
-        <>
       <div className="d-flex justify-content-evenly">
         <div className="border border-0 card flex" style={homepage_card_style}>
           <div className="row g-0">
@@ -43,7 +42,7 @@ export default function HomepageBody() {
                     <h5>Career</h5>  
                     <p className="card-text">
                         I have worked at General Motors in Warren, MI, since 2021. I started with an operations focused Storage Automation team as a software developer, then moved to the development team for the GM internal cloud in 2022. 
-                        I worked on various projects to drive more automation that reduced risk and increased efficiency, including creating APIs to automate service request processing, reconfiguring micorservices to run on Kubernetes, and creating a chatbot using GPT and Azure AI for developers.
+                        I worked on various projects to drive more automation that reduced risk and increased efficiency, including creating APIs to automate service request processing, reconfiguring microservices to run on Kubernetes, and creating a chatbot using GPT and Azure AI for developers.
                     </p>
                     <Link className="btn btn-outline-info" href="/employment" type="button">Learn More</Link>
                 </div>
@@ -71,6 +70,5 @@ export default function HomepageBody() {
           </div>
         </div>
       </div>
-      </>
     )
   }

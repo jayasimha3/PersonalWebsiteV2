@@ -20,7 +20,15 @@ export default function ProjectsBody() {
                             <div className="fw-bold">AzureAI Chatbot <span className="badge text-bg-primary">GM</span></div>
                             Created a chatbot based on Microsoft's Azure OpenAI RAG <Link href={ links.azChatbotDemo }>Chatbot demo app</Link>.
                             The GPT models are deployed to Azure, and the chatbot uses Azure AI Search for indexing and storage of relevant documents. Manual deployment was automated through the use of Github actions and Azure DevOps pipelines.
-                            Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premesis open-source LLM's (like codellama) with Azure deployed search.
+                            Additional customizations include code generation approaches, api version based answers, automated data ingestion through Github Actions, and a custom Visual Studio Code extension using Azure Deployed Search and GPT models, along with on-premises open-source LLM's (like codellama) with Azure deployed search.
+                        </div>
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-start">
+                        <div className="ms-2 me-auto">
+                            <div className="fw-bold">GM Product Reporting and Tracking System <span className="badge text-bg-primary">GM</span></div>
+                            Recreate an on-premises problem tracking system for vehicles to Jira.
+                            This application tracks defects on pre-production and in-production vehicles, allowing GM employees to track and fix those defects. In order to better integrate with the broader software community at GM, this application is being integrated into Jira.
+                            The scope of this project includes a full replacement of the on-premises system, including workflows to move issues through different stages, approvals, scripts for automated functionality, sending issues between different Jira sites. integration with on-premises systems, and more.
                         </div>
                     </li>
                     <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -70,9 +78,9 @@ function Projects() {
                         <ul className="list-group list-group-flush">
                         <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
-                                    <div className="fw-bold">Jira Custom Issue Tracker <span className="badge text-bg-primary">GM</span></div>
-                                    Developing a custom issue tracking solution within Jira. This includes othr Jira instacnes being able to create and modify issues, custom plugins for data structures, and workflows and workflow automations.
-                                    Plugins are built using <Link href="https://developer.atlassian.com/platform/forge/">Atlassian Forge</Link>, with React. This is the first of it's kind of application made within GM, and sets the standard for all future applications that become Jira plugins.
+                                    <div className="fw-bold">GM Product Reporting and Tracking System <span className="badge text-bg-primary">GM</span></div>
+                                    Developing a custom issue tracking solution within Jira. This includes other Jira instances being able to create and modify issues, custom plugins for data structures, and workflows and workflow automation.
+                                    Plugins are built using <Link href={links.atlassianForge}>Atlassian Forge</Link>, with React. This is the first of it's kind of application made within GM, and sets the standard for all future applications that become Jira plugins.
                                     </div>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -106,7 +114,7 @@ function Projects() {
                             <li className="list-group-item d-flex justify-content-between align-items-start">
                                 <div className="ms-2 me-auto">
                                     <div className="fw-bold">Pivotal Cloud Foundry (PCF) to Kubernetes (K8s) Migration <span className="badge text-bg-primary">GM</span></div>
-                                    Replatformed more than 300 microservices from PCF to K8s in the span of 10 months. Was one of the lead developes for this migration; the migration lead to GM saving thousands of dollars in costs, and led to creation of documentation for any other GM developer or team to deploy or migrate to k8s.
+                                    Re-platformed more than 300 microservices from PCF to K8s in the span of 10 months. Was one of the lead developes for this migration; the migration lead to GM saving thousands of dollars in costs, and led to creation of documentation for any other GM developer or team to deploy or migrate to k8s.
                                 </div>
                             </li>
                             <li className="list-group-item d-flex justify-content-between align-items-start">
@@ -212,7 +220,7 @@ function Projects() {
                                             For a project in my machine learning className, I chose to apply linear regression to see if using only statistics, and no "eye-test" 
                                             would result in a better ranking of the top-4 teams in college football.
                                             <br></br>
-                                            The project cannot be extrapolited to the real-world due to some limitations I defined when doing the project. You can learn more 
+                                            The project cannot be extrapolated to the real-world due to some limitations I defined when doing the project. You can learn more 
                                             by looking at the <Link href={mlProjectReport} target="_blank">report</Link>, or contacting me. The project received an A upon submission of the report.
                                         </div>
                                     </li>
