@@ -28,6 +28,7 @@ const links = {
     websiteRepositoryV1: "https://github.com/jayasimha3/PersonalWebsite", // used in Projects.tsx
     forgejo: "https://forgejo.org/", // Used in Projects.tsx
     fluxcd: "https://fluxcd.io/", // Used in Projects.tsx
+    atlassianForge: "https://developer.atlassian.com/platform/forge/", // used in employment and projects
 }
 
 export { rishee, styles, links };
