@@ -7,8 +7,6 @@ import linkedin from '../../../public/images/employment/linkedin-blue.png'
 import github from '../../../public/images/employment/github-white.svg'
 import { links } from './Constants'
 import { useState, useEffect } from 'react';
-//import { Popover } from "bootstrap";
-// import * as bootstrap from "bootstrap";
 
 const navbarMode = 'navbar navbar-expand-lg bg-dark'; // dark mode, need to switch bg- to light for light mode
 const footerMode = 'navbar navbar-expand bg-dark sticky-bottom'; // dark mode, need to switch bg- to light for light mode
@@ -26,14 +24,6 @@ export function Navbar() {
       setPopovers(popoverList);
     });
   }, []);
-
-    // const [popovers, setPopovers] = useState([]); // eslint-disable-line @typescript-eslint/no-unused-vars,@typescript-eslint/no-explicit-any
-
-    // useEffect(() => {
-    //   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-    //   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new Popover(popoverTriggerEl));
-    //   setPopovers(popoverList);
-    // }, []);
     
     return (
       <nav className={ navbarMode } data-bs-theme="dark">
@@ -44,7 +34,7 @@ export function Navbar() {
                 <Link href="/" className='nav-link'>Home</Link>
               </li>
               <li className="nav-item">
-                <Link href="/employment" className='nav-link'>Work Exprience</Link>
+                <Link href="/employment" className='nav-link'>Work Experience</Link>
               </li>
               <li className="nav-item">
                 <Link href="/projects" className='nav-link'>Projects</Link>
