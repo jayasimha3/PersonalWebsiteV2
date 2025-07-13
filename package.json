@@ -8,23 +8,26 @@
     "start": "next start",
     "lint": "next lint",
     "update-dependencies": "npm update --save/--save-dev",
-    "version": "auto-changelog -p"
+    "version": "auto-changelog -p",
+    "playwright": "npx playwright test",
+    "playwright-report": "npx playwright show-report"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.5",
     "bootstrap": "^5.3.7",
-    "bootstrap-icons": "^1.13.1"
+    "bootstrap-icons": "^1.13.1",
+    "next": "15.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.54.1",
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "auto-changelog": "^2.5.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
-    "@eslint/eslintrc": "^3",
-    "auto-changelog": "^2.5.0"
+    "typescript": "^5"
   }
 }
