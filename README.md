@@ -37,6 +37,8 @@ The following describes development tools, such as `npm` scripts, how the websit
 - `npm run version`: Runs `auto-changelog -p` for **generating a changelog**.
 - `npm run dev`: Equivalent to `next dev --turbopack`, and starts a live webserver for development.
 - `npm run lint`: Equivalent to `next lint`, and runs the linting service to find errors in the application. This is run by default during build.
+- `npm run playwright`: Runs `npx playwright test`.
+- `npm run playwright-report`: Runs `npx playwright show-report`.
 
 ### Build
 
@@ -51,7 +53,15 @@ To build a live development version of your app for testing and debugging, run `
 
 ### Tests
 
-There are no unit tests at the moment, but these will be added after release.
+#### Playwright
+
+To set up a playwright test environment, create an Ubuntu 22.04 distrobox using the guide found [here](https://gist.github.com/pskopek/de9d79cf0511839dd5c97703be5cc624). Apple webkit was disabled since the libraries needed could not be installed.
+
+Run `npm run playwright` or `npx playwright test` to run playwright tests.
+
+#### Jest
+
+There are no unit tests at the moment, but these will be added in a future release.
 
 ### Deployment
 
