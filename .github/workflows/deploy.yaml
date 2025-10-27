@@ -53,7 +53,7 @@ jobs:
       id-token: write
     steps:
       - name: Download Build
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: ./out
@@ -79,7 +79,7 @@ jobs:
       - name: Checkout Main
         uses: actions/checkout@v5
       - name: Download Build
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: ./out
