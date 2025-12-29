@@ -34,20 +34,29 @@ function PreviousPositions() {
                                 <li className="list-group-item d-flex justify-content-between align-items-start">
                                     <div className="ms-2 me-auto">
                                         <div className="fw-bold">PRTS Redevelopment</div>
-                                        GM's Problem and Resolution Tracking Service is being redeveloped into a Jira application. This system tracks vehicle defects in current and future vehicles.
+                                        GM's Problem and Resolution Tracking Service is being redeveloped into a Jira application. This system tracks vehicle defects in past, current, and future vehicles.
                                         The current on-premises application does not integrate well with the software teams in GM; the application is being redeveloped in Jira to address this. Some specific implementations in this project include:
                                         <ul>
                                             <li>Send issues between two different Jira sites on the click of a button</li>
                                             <li>Creation of multiple issues via Jira automation</li>
                                             <li>Use of the <Link href={links.atlassianForge}>Atlassian Forge</Link> platform to obtain data from a databricks instance and allow users to pick in a cascading, table, or combined formats</li>
                                             <li>Integration with other on-premises systems so they create issues on PRTS Jira and can track the status of that issue</li>
+                                            <li>Automation to bulk create issues at the push of a button</li>
+                                            <li>Conditional Approvals based on certain actions</li>
                                         </ul>
                                         Some other more administrative functions performed include:
                                         <ul>
                                             <li>Github Repository automation and workflows for deploying Forge applications to Jira</li>
                                             <li>Leading documentation efforts</li>
                                         </ul>
-                                        This project continues as of July 2025 to fully redevelop the on-premises application into a Jira Cloud application.
+                                        Specific to the Forge development, the following is included:
+                                        <ul>
+                                            <li>Cascading select based on GM data stored in Databricks</li>
+                                            <li>Select based on a set of attributes, which is dependent on the selection made in another field</li>
+                                            <li>A table select which can be based on Databricks data or data a user inputs</li>
+                                            <li>Filtered user pickers</li>
+                                        </ul>
+                                        This project continues as of December 2025 to fully redevelop the on-premises application into a Jira Cloud application. The application opens up to all GM employees early 2026, with a decommission of the old system planned in 2026
                                     </div>
                                 </li>
                             </ul>
@@ -357,7 +366,7 @@ function SkillsList() {
                                 <td>Angular</td>
                                 <td>Ansible</td>
                                 <td>Generative AI</td>
-                                <td>Github Integrations</td>
+                                <td>Github Actions</td>
                             </tr>
                             <tr>
                                 <td>Atlassian Forge</td>
@@ -381,7 +390,7 @@ function SkillsList() {
                                 <td>Next.js</td>
                                 <td></td>
                                 <td></td>
-                                <td>Confluence</td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td>Python</td>
