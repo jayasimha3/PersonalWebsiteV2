@@ -43,6 +43,7 @@ export default function HomepageBody() {
                     <p className="card-text">
                         I have worked at General Motors in Warren, MI, since 2021. I started with an operations focused Storage Automation team as a software developer, then moved to the development team for the GM internal cloud in 2022. 
                         I worked on various projects to drive more automation that reduced risk and increased efficiency, including creating APIs to automate service request processing, reconfiguring microservices to run on Kubernetes, and creating a chatbot using GPT and Azure AI for developers.
+                        My most recent Gm project is to redevelop a <Link href="/employment">problem tracking system</Link> in Jira.
                     </p>
                     <Link className="btn btn-outline-info" href="/employment" type="button">Learn More</Link>
                 </div>
