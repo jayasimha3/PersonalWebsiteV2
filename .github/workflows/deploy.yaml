@@ -16,7 +16,7 @@ on:
       tag:
         description: 'Release Tag, will be used by Docker if selected'
         required: true
-        default: "v2.2"
+        default: "v2.3"
         type: string
   push:
     branches:
@@ -39,7 +39,7 @@ jobs:
     with:
       deploy: true
       docker: true
-      tag: v2.2
+      tag: v2.3
   pages:
     runs-on: github-actions-runner-self-hosted-k8s-pw
     needs: build
@@ -93,7 +93,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Check for Tag, Specify if does not exist
         if: "${{ env.TAG }} == ''"
-        run: echo "TAG=v2.2" >> $GITHUB_ENV
+        run: echo "TAG=v2.3" >> $GITHUB_ENV
       - name: Extract Metadata for Docker
         id: meta
         uses: docker/metadata-action@v5
