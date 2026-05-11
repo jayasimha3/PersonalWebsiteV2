@@ -22,7 +22,7 @@
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "auto-changelog": "^2.5.0",
+    "auto-changelog": "^2.5.1",
     "eslint": "^10",
     "eslint-config-next": "16.2.1",
     "typescript": "^5"
