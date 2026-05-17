@@ -100,7 +100,7 @@ jobs:
         run: echo "TAG=v2.3" >> $GITHUB_ENV
       - name: Extract Metadata for Docker
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
