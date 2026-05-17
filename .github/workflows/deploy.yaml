@@ -27,6 +27,10 @@ on:
       - '**.json'
       - 'next.config.ts'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 env:
   ARTIFACT_NAME: ${{ vars.BUILD_ARTIFACT_NAME }}
   REGISTRY: ghcr.io
