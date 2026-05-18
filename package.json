@@ -24,7 +24,7 @@
     "@types/react-dom": "^19",
     "auto-changelog": "^2.5.1",
     "eslint": "^10",
-    "eslint-config-next": "16.2.1",
+    "eslint-config-next": "16.2.6",
     "typescript": "^6"
   }
 }
