@@ -56,3 +56,9 @@ There are no unit tests at the moment, but these will be added after release.
 ### Deployment
 
 Deployment is handled through the [Deploy](./.github/workflows/deploy.yaml) GitHub Action workflow. It deployes a github pages deployment and a private docker image.
+
+## AI Disclaimer
+
+When first developing version 2 (2.1), I did use AI assistance to help solve issues I could not solve on my own. However, I have not asked any AI tools to write code for me, nor have I used agents, tools, or other "vibe-coding" tools. I have used, and will continue to use, tab-completions, but any AI use will be limited to guidance, rather than writing code.
+
+To date, the only mainly AI assisted or AI generated code is the [AGENTS.md](./AGENTS.md) file, which was written by the [Pi Agent](https://pi.dev) using locally hosted `qwen3.6:27b` via [ollama](https://github.com/ollama/ollama). This file was written as a test of the Pi agent, and to provide instructions for future AI use. I will be transparent about all major AI usage by either providing "ai assisted" or "ai generated" in commits, or using an `## AI Disclaimer` message in pull requests. Major usage would include applying entire generated code blocks, or using agents to write comments or other code. However, this will not include tab-completions. The AGENTS.md file furthers the direction of little AI usage to develop this website, and I ask that no contributions be made using AI. Please open an issue if you find something that should be changed.
