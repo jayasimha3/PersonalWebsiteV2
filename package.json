@@ -18,8 +18,8 @@
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.5",
     "@types/node": "^26",
+    "@eslint/eslintrc": "^3.3.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "auto-changelog": "^2.6.0",
